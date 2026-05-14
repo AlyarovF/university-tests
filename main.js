@@ -56,10 +56,11 @@ function setupEventListeners() {
     });
 }
 
+import appDataRaw from './data.json';
+
 async function loadData() {
     try {
-        const response = await fetch('/data.json');
-        appData = await response.json();
+        appData = JSON.parse(JSON.stringify(appDataRaw)); // deep copy to avoid mutating original import
         
         // Dynamically create variants of 25 questions each
         if (appData && appData.subjects) {
@@ -79,7 +80,7 @@ async function loadData() {
             });
         }
     } catch (error) {
-        console.error("Error loading data.json", error);
+        console.error("Error loading data", error);
         alert("Ma'lumotlarni yuklashda xatolik yuz berdi.");
     }
 }
