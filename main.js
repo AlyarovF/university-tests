@@ -27,6 +27,7 @@ const ui = {
     timer: document.getElementById('timer'),
     questionList: document.getElementById('questionList'),
     finishQuizBtn: document.getElementById('finishQuizBtn'),
+    exitQuizBtn: document.getElementById('exitQuizBtn'),
     correctCount: document.getElementById('correctCount'),
     incorrectCount: document.getElementById('incorrectCount'),
     savingStatus: document.getElementById('savingStatus'),
@@ -50,6 +51,7 @@ function setupEventListeners() {
     ui.backToHomeBtn.addEventListener('click', showHomeScreen);
     ui.homeBtn.addEventListener('click', showHomeScreen);
     ui.finishQuizBtn.addEventListener('click', finishQuiz);
+    ui.exitQuizBtn.addEventListener('click', exitQuiz);
     ui.reviewBtn.addEventListener('click', () => {
         ui.reviewSection.classList.remove('hidden');
         ui.reviewSection.scrollIntoView({ behavior: 'smooth' });
@@ -115,6 +117,18 @@ function showVariantsScreen(subject) {
     });
     
     switchScreen('variants');
+}
+
+function exitQuiz() {
+    const confirmExit = confirm("Testni rostdan ham to'xtatmoqchimisiz? Barcha natijalaringiz o'chib ketadi.");
+    if (confirmExit) {
+        stopTimer();
+        if (currentSubject) {
+            showVariantsScreen(currentSubject);
+        } else {
+            showHomeScreen();
+        }
+    }
 }
 
 // Quiz Logic
