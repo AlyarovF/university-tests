@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Test Ilova</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="logo">🎓 EduTest</h1>
+            <div class="auth-section hidden">
+                <span id="userInfo" class="user-info hidden"></span>
+                <button id="loginBtn" class="btn btn-secondary">Google orqali kirish</button>
+                <button id="logoutBtn" class="btn btn-secondary hidden">Chiqish</button>
+            </div>
+        </header>
+
+        <!-- Home Screen (Subjects) -->
+        <main id="homeScreen" class="screen">
+            <h2 style="color: white; margin-bottom: 24px;">Fanlarni tanlang</h2>
+            <div id="subjectsGrid" class="grid">
+                <!-- Subject cards will be injected here -->
+            </div>
+        </main>
+
+        <!-- Variants Screen -->
+        <main id="variantsScreen" class="screen hidden">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+                <h2 id="subjectTitle" style="color: white;"></h2>
+                <button id="backToHomeBtn" class="btn btn-secondary">Orqaga</button>
+            </div>
+            <div id="variantsGrid" class="grid">
+                <!-- Variant cards will be injected here -->
+            </div>
+        </main>
+
+        <!-- Quiz Screen -->
+        <main id="quizScreen" class="screen hidden">
+            <div id="timer" class="timer-banner">25:00</div>
+            <div id="questionList" class="question-list">
+                <!-- Questions will be injected here -->
+            </div>
+            <div class="quiz-footer">
+                <button id="finishQuizBtn" class="btn btn-primary" style="font-size: 18px; padding: 16px 48px;">Testni yakunlash</button>
+            </div>
+        </main>
+
+        <!-- Results Screen -->
+        <main id="resultsScreen" class="screen hidden">
+            <div class="results">
+                <h2>🎉 Natijalar</h2>
+                <div class="stats">
+                    <div class="stat-item correct">
+                        <div class="stat-value" id="correctCount">0</div>
+                        <div class="stat-label">To'g'ri javoblar</div>
+                    </div>
+                    <div class="stat-item incorrect">
+                        <div class="stat-value" id="incorrectCount">0</div>
+                        <div class="stat-label">Noto'g'ri javoblar</div>
+                    </div>
+                </div>
+                
+                <p id="savingStatus" class="hidden" style="color: #6b7280; margin-bottom: 24px;"></p>
+                
+                <div class="result-buttons">
+                    <button id="reviewBtn" class="btn btn-secondary">Xatolarni ko'rish</button>
+                    <button id="homeBtn" class="btn btn-primary">Bosh sahifa</button>
+                </div>
+
+                <div id="reviewSection" class="review-list hidden">
+                    <h3>Batafsil tahlil</h3>
+                    <div id="reviewQuestions" class="question-list">
+                        <!-- Review questions will be injected here -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Application Logic -->
+    <script type="module" src="/firebase.js"></script>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+{
+  "subjects": [
+    {
+      "id": "marketing",
+      "title": "Marketing Asoslari",
+      "variants": [
+        {
+          "id": "var1",
+          "title": "Variant 1",
+          "questions": [
+            {
+              "id": 1,
+              "qn": "Klassik AIDA modelidagi \"Interest\" (Qiziqish) bosqichining asosiy maqsadi nimadan iborat?",
+              "options": [
+                "Iste’molchining diqqatini brendga birinchi marta jalb qilish",
+                "Mahsulotni darhol sotib olish to‘g‘risida yakuniy qaror qabul qildirish",
+                "Diqqatni tortgandan so‘ng mahsulotga nisbatan qiziqish uyg‘otish",
+                "Brendning ijobiy va ishonchli imidjini uzoq muddatga shakllantirish"
+              ],
+              "answer": 3
+            },
+            {
+              "id": 2,
+              "qn": "Telemarketing tushunchasiga berilgan to‘g‘ri ta’rifni toping",
+              "options": [
+                "Mahsulot yoki xizmatlarni telefon orqali targ‘ib qilish va sotish",
+                "Mahsulotni faqat internet do‘konlar orqali sotish va ularni targ‘ib qilish",
+                "Ko‘chalarda reklama bannerlarini o‘rnatish",
+                "Gazeta va jurnallarda e’lonlar chop etish"
+              ],
+              "answer": 1
+            },
+            {
+              "id": 3,
+              "qn": "Telemarketing marketingning qaysi shakli hisoblanadi?",
+              "options": [
+                "Bilvosita marketing",
+                "Ijtimoiy marketing",
+                "To‘g‘ridan-to‘g‘ri (direct) marketing",
+                "Ommaviy marketing"
+              ],
+              "answer": 3
+            },
+            {
+              "id": 4,
+              "qn": "Mijozning o‘zi kompaniyaga qo‘ng‘iroq qilishi telemarketingning qaysi turiga kiradi?",
+              "options": [
+                "Outbound (chiquvchi)",
+                "Inbound (kiruvchi)",
+                "Sovuq qo‘ng‘iroqlar",
+                "B2B marketing"
+              ],
+              "answer": 2
+            },
+            {
+              "id": 5,
+              "qn": "Kompaniya tashabbusi bilan mijozlarga qo‘ng‘iroq qilish nima deyiladi?",
+              "options": [
+                "Kiruvchi telemarketing",
+                "Ijtimoiy so‘rovnoma",
+                "Chiquvchi (outbound) telemarketing",
+                "Mijozlar bazasini o‘chirish"
+              ],
+              "answer": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
