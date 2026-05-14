@@ -1,9 +1,5 @@
-import { auth, loginWithGoogle, logout, saveResult } from './firebase.js';
-import { onAuthStateChanged } from 'firebase/auth';
-
 // State
 let appData = null;
-let currentUser = null;
 let currentSubject = null;
 let currentVariant = null;
 let currentQuestions = [];
@@ -42,33 +38,14 @@ const ui = {
 
 // Initialize
 async function init() {
-    setupAuthListeners();
     setupEventListeners();
     await loadData();
     renderSubjects();
 }
 
-function setupAuthListeners() {
-    onAuthStateChanged(auth, (user) => {
-        if (user) {
-            currentUser = user;
-            ui.userInfo.textContent = user.email;
-            ui.userInfo.classList.remove('hidden');
-            ui.logoutBtn.classList.remove('hidden');
-            ui.loginBtn.classList.add('hidden');
-        } else {
-            currentUser = null;
-            ui.userInfo.textContent = '';
-            ui.userInfo.classList.add('hidden');
-            ui.logoutBtn.classList.add('hidden');
-            ui.loginBtn.classList.remove('hidden');
-        }
-    });
-}
+
 
 function setupEventListeners() {
-    ui.loginBtn.addEventListener('click', loginWithGoogle);
-    ui.logoutBtn.addEventListener('click', logout);
     ui.logo.addEventListener('click', showHomeScreen);
     ui.backToHomeBtn.addEventListener('click', showHomeScreen);
     ui.homeBtn.addEventListener('click', showHomeScreen);
@@ -272,31 +249,7 @@ async function finishQuiz() {
     ui.reviewSection.classList.add('hidden');
     renderReview();
     
-    ui.savingStatus.textContent = "Natija saqlanmoqda...";
     switchScreen('results');
-    
-    // Save to Firebase if logged in
-    if (currentUser) {
-        const success = await saveResult(
-            currentUser.email,
-            currentSubject.id,
-            currentVariant.id,
-            correct,
-            incorrect,
-            userAnswers
-        );
-        
-        if (success) {
-            ui.savingStatus.textContent = "Natija bazaga muvaffaqiyatli saqlandi!";
-            ui.savingStatus.style.color = "#10b981";
-        } else {
-            ui.savingStatus.textContent = "Natijani saqlashda xatolik yuz berdi.";
-            ui.savingStatus.style.color = "#ef4444";
-        }
-    } else {
-        ui.savingStatus.textContent = "Natija saqlanmadi (Tizimga kirmagansiz).";
-        ui.savingStatus.style.color = "#f59e0b";
-    }
 }
 
 function renderReview() {
