@@ -83,6 +83,24 @@ async function loadData() {
     try {
         const response = await fetch('/data.json');
         appData = await response.json();
+        
+        // Dynamically create variants of 25 questions each
+        if (appData && appData.subjects) {
+            appData.subjects.forEach(subject => {
+                if (subject.questions && !subject.variants) {
+                    subject.variants = [];
+                    const chunkSize = 25;
+                    for (let i = 0; i < subject.questions.length; i += chunkSize) {
+                        const chunk = subject.questions.slice(i, i + chunkSize);
+                        subject.variants.push({
+                            id: `var${Math.floor(i/chunkSize) + 1}`,
+                            title: `Variant ${Math.floor(i/chunkSize) + 1}`,
+                            questions: chunk
+                        });
+                    }
+                }
+            });
+        }
     } catch (error) {
         console.error("Error loading data.json", error);
         alert("Ma'lumotlarni yuklashda xatolik yuz berdi.");
