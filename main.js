@@ -131,11 +131,38 @@ function exitQuiz() {
     }
 }
 
+// Utility
+function shuffleArray(array) {
+    const newArray = [...array];
+    for (let i = newArray.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+    }
+    return newArray;
+}
+
 // Quiz Logic
 function startQuiz(variant) {
     currentVariant = variant;
-    // Limit to 25 questions or less
-    currentQuestions = variant.questions.slice(0, 25);
+    // Deep clone to avoid mutating the original data during shuffling
+    currentQuestions = JSON.parse(JSON.stringify(variant.questions.slice(0, 25)));
+    
+    // Shuffle options for each question
+    currentQuestions.forEach(q => {
+        if (q.options && q.options.length > 0) {
+            const indexedOptions = q.options.map((text, index) => ({ 
+                text, 
+                originalIndex: index + 1 
+            }));
+            const shuffled = shuffleArray(indexedOptions);
+            q.options = shuffled.map(item => item.text);
+            
+            // Find the new index of the original correct answer
+            const newCorrectIndex = shuffled.findIndex(item => item.originalIndex === q.answer) + 1;
+            q.answer = newCorrectIndex;
+        }
+    });
+
     userAnswers = {};
     
     renderQuiz();
