@@ -362,13 +362,13 @@ function renderReview() {
         statusText.style.fontWeight = 'bold';
         if (userAns === q.answer) {
             statusText.textContent = "Javobingiz: To'g'ri";
-            statusText.style.color = "#065f46";
+            statusText.style.color = "var(--success)";
         } else if (userAns === null || userAns === undefined) {
             statusText.textContent = "Javobingiz: Belgilanmagan";
-            statusText.style.color = "#991b1b";
+            statusText.style.color = "var(--error)";
         } else {
             statusText.textContent = "Javobingiz: Noto'g'ri";
-            statusText.style.color = "#991b1b";
+            statusText.style.color = "var(--error)";
         }
         
         card.appendChild(qNum);
