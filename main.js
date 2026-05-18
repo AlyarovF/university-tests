@@ -16,7 +16,9 @@ const screens = {
 };
 
 const ui = {
+    header: document.querySelector('.header'),
     logo: document.getElementById('logo'),
+    themeToggleBtn: document.getElementById('themeToggleBtn'),
     loginBtn: document.getElementById('loginBtn'),
     logoutBtn: document.getElementById('logoutBtn'),
     userInfo: document.getElementById('userInfo'),
@@ -39,15 +41,33 @@ const ui = {
 
 // Initialize
 async function init() {
+    initTheme();
     setupEventListeners();
     await loadData();
     renderSubjects();
 }
 
+// Theme Logic
+function initTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        if(ui.themeToggleBtn) ui.themeToggleBtn.textContent = '☀️';
+    } else {
+        if(ui.themeToggleBtn) ui.themeToggleBtn.textContent = '🌙';
+    }
+}
 
+function toggleTheme() {
+    document.body.classList.toggle('dark-mode');
+    const isDark = document.body.classList.contains('dark-mode');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    if(ui.themeToggleBtn) ui.themeToggleBtn.textContent = isDark ? '☀️' : '🌙';
+}
 
 function setupEventListeners() {
     ui.logo.addEventListener('click', showHomeScreen);
+    if(ui.themeToggleBtn) ui.themeToggleBtn.addEventListener('click', toggleTheme);
     ui.backToHomeBtn.addEventListener('click', showHomeScreen);
     ui.homeBtn.addEventListener('click', showHomeScreen);
     ui.finishQuizBtn.addEventListener('click', finishQuiz);
@@ -91,6 +111,13 @@ async function loadData() {
 function switchScreen(screenName) {
     Object.values(screens).forEach(s => s.classList.add('hidden'));
     screens[screenName].classList.remove('hidden');
+    
+    if (screenName === 'quiz') {
+        ui.header.classList.add('hidden');
+    } else {
+        ui.header.classList.remove('hidden');
+    }
+    
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
