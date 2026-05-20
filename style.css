@@ -689,6 +689,56 @@ body.dark-mode .variant-best-score.no-score {
     flex-wrap: wrap;
 }
 
+/* Home Controls (vibration toggle) */
+.home-controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.vibration-toggle {
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 100px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid;
+}
+
+.vibration-toggle.vibration-on {
+    background: linear-gradient(135deg, rgba(52, 211, 153, 0.15), rgba(5, 150, 105, 0.1));
+    color: var(--success);
+    border-color: rgba(5, 150, 105, 0.3);
+}
+
+.vibration-toggle.vibration-on:hover {
+    background: linear-gradient(135deg, rgba(52, 211, 153, 0.25), rgba(5, 150, 105, 0.18));
+    box-shadow: 0 4px 16px rgba(5, 150, 105, 0.2);
+}
+
+.vibration-toggle.vibration-off {
+    background: rgba(100, 116, 139, 0.1);
+    color: var(--text-muted);
+    border-color: rgba(100, 116, 139, 0.2);
+}
+
+.vibration-toggle.vibration-off:hover {
+    background: rgba(100, 116, 139, 0.18);
+    box-shadow: 0 4px 16px rgba(100, 116, 139, 0.15);
+}
+
+body.dark-mode .vibration-toggle.vibration-on {
+    background: linear-gradient(135deg, rgba(52, 211, 153, 0.2), rgba(52, 211, 153, 0.08));
+    border-color: rgba(52, 211, 153, 0.3);
+}
+
+body.dark-mode .vibration-toggle.vibration-off {
+    background: rgba(148, 163, 184, 0.1);
+    border-color: rgba(148, 163, 184, 0.2);
+}
+
 /* Utilities */
 .hidden { display: none !important; }
 

@@ -6,6 +6,15 @@ let currentQuestions = [];
 let userAnswers = {};
 let timerInterval = null;
 let timeLeft = 25 * 60; // 25 minutes in seconds
+let vibrationEnabled = localStorage.getItem('vibrationEnabled') !== 'false'; // default ON
+
+// Vibration helper
+function triggerVibration(pattern) {
+    if (!vibrationEnabled) return;
+    if (navigator.vibrate) {
+        navigator.vibrate(pattern);
+    }
+}
 
 // DOM Elements
 const screens = {
@@ -46,6 +55,7 @@ const ui = {
 // Initialize
 async function init() {
     initTheme();
+    initVibrationToggle();
     setupEventListeners();
     await loadData();
     renderSubjects();
@@ -79,6 +89,12 @@ function setupEventListeners() {
     ui.homeBtn.addEventListener('click', showHomeScreen);
     ui.finishQuizBtn.addEventListener('click', finishQuiz);
     ui.exitQuizBtn.addEventListener('click', exitQuiz);
+    
+    // Vibration toggle
+    const vibToggle = document.getElementById('vibrationToggleBtn');
+    if (vibToggle) {
+        vibToggle.addEventListener('click', toggleVibration);
+    }
     
     // Retake button — restart the same variant with fresh randomization
     ui.retakeBtn.addEventListener('click', () => {
@@ -304,6 +320,8 @@ function renderQuiz() {
                     // Shake animation for wrong answer
                     card.classList.add('shake');
                     setTimeout(() => card.classList.remove('shake'), 500);
+                    // Vibrate on wrong answer (short burst pattern)
+                    triggerVibration([100, 50, 100]);
                 } else {
                     // Celebration for correct answer
                     optBtn.classList.add('correct-pop');
@@ -378,7 +396,7 @@ function launchConfetti() {
     }
     
     let frame = 0;
-    const maxFrames = 180; // ~3 seconds
+    const maxFrames = 420; // ~7 seconds for longer celebration
     
     function animate() {
         frame++;
@@ -489,8 +507,12 @@ async function finishQuiz() {
     
     switchScreen('results');
     
-    // Launch confetti if decent score
-    if (correct >= 15) {
+    // Launch confetti celebration:
+    // If 16+ questions: trigger when more than 16 correct
+    // If fewer than 16 questions: trigger only on 100% correct
+    const totalQns = currentQuestions.length;
+    const shouldCelebrate = totalQns >= 16 ? correct > 16 : correct === totalQns;
+    if (shouldCelebrate) {
         setTimeout(() => launchConfetti(), 300);
     }
 }
@@ -561,6 +583,36 @@ function renderReview() {
         card.appendChild(statusText);
         ui.reviewQuestions.appendChild(card);
     });
+}
+
+// Vibration toggle logic
+function initVibrationToggle() {
+    const btn = document.getElementById('vibrationToggleBtn');
+    if (!btn) return;
+    updateVibrationButton(btn);
+}
+
+function toggleVibration() {
+    vibrationEnabled = !vibrationEnabled;
+    localStorage.setItem('vibrationEnabled', vibrationEnabled.toString());
+    const btn = document.getElementById('vibrationToggleBtn');
+    if (btn) updateVibrationButton(btn);
+    // Give a quick test vibration when turning on
+    if (vibrationEnabled) {
+        triggerVibration(50);
+    }
+}
+
+function updateVibrationButton(btn) {
+    if (vibrationEnabled) {
+        btn.innerHTML = '📳 Tebranish: <strong>Yoqilgan</strong>';
+        btn.classList.remove('vibration-off');
+        btn.classList.add('vibration-on');
+    } else {
+        btn.innerHTML = '📴 Tebranish: <strong>O\'chirilgan</strong>';
+        btn.classList.remove('vibration-on');
+        btn.classList.add('vibration-off');
+    }
 }
 
 // Initial Render
