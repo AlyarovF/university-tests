@@ -11,6 +11,8 @@
 </head>
 <body>
     <button id="themeToggleBtn" class="btn btn-icon theme-toggle" title="Mavzuni o'zgartirish">🌙</button>
+    <!-- Confetti Canvas for celebrations -->
+    <canvas id="confettiCanvas"></canvas>
     <div class="container">
         <header class="header">
             <h1 id="logo">🎓 EduTest</h1>
@@ -69,17 +71,22 @@
                     </div>
                 </div>
                 
-                <p id="savingStatus" class="hidden" style="color: #6b7280; margin-bottom: 24px;"></p>
+                <p id="bestScoreInfo" class="best-score-info hidden"></p>
                 
                 <div class="result-buttons">
-                    <button id="reviewBtn" class="btn btn-secondary">Xatolarni ko'rish</button>
-                    <button id="homeBtn" class="btn btn-primary">Bosh sahifa</button>
+                    <button id="retakeBtn" class="btn btn-secondary">🔄 Qayta topshirish</button>
+                    <button id="reviewBtn" class="btn btn-secondary">📋 Xatolarni ko'rish</button>
+                    <button id="homeBtn" class="btn btn-primary">🏠 Bosh sahifa</button>
                 </div>
 
                 <div id="reviewSection" class="review-list hidden">
                     <h3>Batafsil tahlil</h3>
                     <div id="reviewQuestions" class="question-list">
                         <!-- Review questions will be injected here -->
+                    </div>
+                    <div class="review-back-actions">
+                        <button id="reviewBackHomeBtn" class="btn btn-primary">🏠 Bosh sahifa</button>
+                        <button id="reviewRetakeBtn" class="btn btn-secondary">🔄 Qayta topshirish</button>
                     </div>
                 </div>
             </div>

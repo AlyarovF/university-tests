@@ -32,11 +32,15 @@ const ui = {
     exitQuizBtn: document.getElementById('exitQuizBtn'),
     correctCount: document.getElementById('correctCount'),
     incorrectCount: document.getElementById('incorrectCount'),
-    savingStatus: document.getElementById('savingStatus'),
+    bestScoreInfo: document.getElementById('bestScoreInfo'),
+    retakeBtn: document.getElementById('retakeBtn'),
     reviewBtn: document.getElementById('reviewBtn'),
     homeBtn: document.getElementById('homeBtn'),
     reviewSection: document.getElementById('reviewSection'),
-    reviewQuestions: document.getElementById('reviewQuestions')
+    reviewQuestions: document.getElementById('reviewQuestions'),
+    reviewBackHomeBtn: document.getElementById('reviewBackHomeBtn'),
+    reviewRetakeBtn: document.getElementById('reviewRetakeBtn'),
+    confettiCanvas: document.getElementById('confettiCanvas')
 };
 
 // Initialize
@@ -68,13 +72,34 @@ function toggleTheme() {
 function setupEventListeners() {
     ui.logo.addEventListener('click', showHomeScreen);
     if(ui.themeToggleBtn) ui.themeToggleBtn.addEventListener('click', toggleTheme);
-    ui.backToHomeBtn.addEventListener('click', showHomeScreen);
+    ui.backToHomeBtn.addEventListener('click', () => {
+        stopTimer();
+        switchScreen('variants');
+    });
     ui.homeBtn.addEventListener('click', showHomeScreen);
     ui.finishQuizBtn.addEventListener('click', finishQuiz);
     ui.exitQuizBtn.addEventListener('click', exitQuiz);
+    
+    // Retake button — restart the same variant with fresh randomization
+    ui.retakeBtn.addEventListener('click', () => {
+        if (currentVariant) {
+            startQuiz(currentVariant);
+        }
+    });
+    
+    // Review button — show error review (one-time toggle)
     ui.reviewBtn.addEventListener('click', () => {
         ui.reviewSection.classList.remove('hidden');
+        ui.reviewBtn.classList.add('hidden'); // Hide the review button after clicking
         ui.reviewSection.scrollIntoView({ behavior: 'smooth' });
+    });
+    
+    // Review section bottom buttons
+    ui.reviewBackHomeBtn.addEventListener('click', showHomeScreen);
+    ui.reviewRetakeBtn.addEventListener('click', () => {
+        if (currentVariant) {
+            startQuiz(currentVariant);
+        }
     });
 }
 
@@ -107,6 +132,27 @@ async function loadData() {
     }
 }
 
+// Best Score helpers (localStorage)
+function getBestScoreKey(subjectId, variantId) {
+    return `bestScore_${subjectId}_${variantId}`;
+}
+
+function getBestScore(subjectId, variantId) {
+    const key = getBestScoreKey(subjectId, variantId);
+    const val = localStorage.getItem(key);
+    return val !== null ? parseInt(val, 10) : null;
+}
+
+function saveBestScore(subjectId, variantId, score) {
+    const key = getBestScoreKey(subjectId, variantId);
+    const prev = getBestScore(subjectId, variantId);
+    if (prev === null || score > prev) {
+        localStorage.setItem(key, score.toString());
+        return true; // new best
+    }
+    return false;
+}
+
 // Navigation
 function switchScreen(screenName) {
     Object.values(screens).forEach(s => s.classList.add('hidden'));
@@ -133,11 +179,18 @@ function showVariantsScreen(subject) {
     
     subject.variants.forEach(variant => {
         const card = document.createElement('div');
-        card.className = 'card';
+        card.className = 'card variant-card';
+        
+        const bestScore = getBestScore(subject.id || subject.title, variant.id);
+        const bestScoreHTML = bestScore !== null 
+            ? `<div class="variant-best-score"><span class="best-icon">🏆</span> Eng yaxshi: <strong>${bestScore}/25</strong></div>` 
+            : `<div class="variant-best-score no-score"><span class="best-icon">📝</span> Hali topshirilmagan</div>`;
+        
         card.innerHTML = `
             <h2>${variant.title}</h2>
             <p>${variant.questions.length} ta savol</p>
             <p>Vaqt: 25 daqiqa</p>
+            ${bestScoreHTML}
         `;
         card.addEventListener('click', () => startQuiz(variant));
         ui.variantsGrid.appendChild(card);
@@ -172,10 +225,13 @@ function shuffleArray(array) {
 function startQuiz(variant) {
     currentVariant = variant;
     // Deep clone to avoid mutating the original data during shuffling
-    currentQuestions = JSON.parse(JSON.stringify(variant.questions.slice(0, 25)));
+    let questions = JSON.parse(JSON.stringify(variant.questions.slice(0, 25)));
     
-    // Shuffle options for each question
-    currentQuestions.forEach(q => {
+    // 1. Shuffle question ORDER (randomize the 25 questions)
+    questions = shuffleArray(questions);
+    
+    // 2. Shuffle options for each question (keep correct answer tracked)
+    questions.forEach(q => {
         if (q.options && q.options.length > 0) {
             const indexedOptions = q.options.map((text, index) => ({ 
                 text, 
@@ -189,7 +245,8 @@ function startQuiz(variant) {
             q.answer = newCorrectIndex;
         }
     });
-
+    
+    currentQuestions = questions;
     userAnswers = {};
     
     renderQuiz();
@@ -241,9 +298,16 @@ function renderQuiz() {
                     }
                 });
                 
-                // Show if chosen is incorrect
+                // Show if chosen is incorrect with animation
                 if (!isCorrectOption) {
                     optBtn.classList.add('incorrect');
+                    // Shake animation for wrong answer
+                    card.classList.add('shake');
+                    setTimeout(() => card.classList.remove('shake'), 500);
+                } else {
+                    // Celebration for correct answer
+                    optBtn.classList.add('correct-pop');
+                    launchMiniCelebration(optBtn);
                 }
             });
             
@@ -255,6 +319,93 @@ function renderQuiz() {
         card.appendChild(optionsDiv);
         ui.questionList.appendChild(card);
     });
+}
+
+// Mini celebration sparkles for correct answer
+function launchMiniCelebration(element) {
+    const rect = element.getBoundingClientRect();
+    const centerX = rect.left + rect.width / 2;
+    const centerY = rect.top + rect.height / 2;
+    
+    const emojis = ['🎉', '✨', '⭐', '🌟', '💫', '🎊'];
+    
+    for (let i = 0; i < 8; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'celebration-particle';
+        particle.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+        
+        const angle = (Math.PI * 2 * i) / 8;
+        const distance = 60 + Math.random() * 40;
+        const tx = Math.cos(angle) * distance;
+        const ty = Math.sin(angle) * distance;
+        
+        particle.style.left = `${centerX}px`;
+        particle.style.top = `${centerY}px`;
+        particle.style.setProperty('--tx', `${tx}px`);
+        particle.style.setProperty('--ty', `${ty}px`);
+        
+        document.body.appendChild(particle);
+        
+        setTimeout(() => particle.remove(), 800);
+    }
+}
+
+// Full confetti celebration for results screen
+function launchConfetti() {
+    const canvas = ui.confettiCanvas;
+    if (!canvas) return;
+    
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    canvas.classList.add('active');
+    
+    const ctx = canvas.getContext('2d');
+    const particles = [];
+    const colors = ['#4f46e5', '#818cf8', '#8b5cf6', '#059669', '#34d399', '#f59e0b', '#ef4444', '#ec4899'];
+    
+    for (let i = 0; i < 120; i++) {
+        particles.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height - canvas.height,
+            w: Math.random() * 10 + 5,
+            h: Math.random() * 6 + 3,
+            color: colors[Math.floor(Math.random() * colors.length)],
+            speed: Math.random() * 3 + 2,
+            angle: Math.random() * Math.PI * 2,
+            spin: (Math.random() - 0.5) * 0.2,
+            drift: (Math.random() - 0.5) * 1.5
+        });
+    }
+    
+    let frame = 0;
+    const maxFrames = 180; // ~3 seconds
+    
+    function animate() {
+        frame++;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        particles.forEach(p => {
+            p.y += p.speed;
+            p.x += p.drift;
+            p.angle += p.spin;
+            
+            ctx.save();
+            ctx.translate(p.x, p.y);
+            ctx.rotate(p.angle);
+            ctx.fillStyle = p.color;
+            ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
+            ctx.restore();
+        });
+        
+        if (frame < maxFrames) {
+            requestAnimationFrame(animate);
+        } else {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            canvas.classList.remove('active');
+        }
+    }
+    
+    animate();
 }
 
 // Timer
@@ -315,16 +466,53 @@ async function finishQuiz() {
     ui.correctCount.textContent = correct;
     ui.incorrectCount.textContent = incorrect;
     
+    // Save best score
+    const subjectId = currentSubject ? (currentSubject.id || currentSubject.title) : 'unknown';
+    const variantId = currentVariant ? currentVariant.id : 'unknown';
+    const isNewBest = saveBestScore(subjectId, variantId, correct);
+    const prevBest = getBestScore(subjectId, variantId);
+    
+    // Show best score info
+    if (isNewBest) {
+        ui.bestScoreInfo.textContent = `🏆 Yangi rekord! ${correct}/25`;
+        ui.bestScoreInfo.className = 'best-score-info new-best';
+    } else {
+        ui.bestScoreInfo.textContent = `🏆 Eng yaxshi natija: ${prevBest}/25`;
+        ui.bestScoreInfo.className = 'best-score-info';
+    }
+    ui.bestScoreInfo.classList.remove('hidden');
+    
+    // Reset review button visibility
+    ui.reviewBtn.classList.remove('hidden');
     ui.reviewSection.classList.add('hidden');
     renderReview();
     
     switchScreen('results');
+    
+    // Launch confetti if decent score
+    if (correct >= 15) {
+        setTimeout(() => launchConfetti(), 300);
+    }
 }
 
 function renderReview() {
     ui.reviewQuestions.innerHTML = '';
     
-    currentQuestions.forEach((q, index) => {
+    // Only show incorrect & unanswered questions
+    const wrongQuestions = currentQuestions.filter(q => {
+        const ans = userAnswers[q.id];
+        return ans !== q.answer;
+    });
+    
+    if (wrongQuestions.length === 0) {
+        const noErrors = document.createElement('p');
+        noErrors.className = 'no-errors-msg';
+        noErrors.textContent = "🎉 Barcha javoblar to'g'ri! Ajoyib!";
+        ui.reviewQuestions.appendChild(noErrors);
+        return;
+    }
+    
+    wrongQuestions.forEach((q, index) => {
         const card = document.createElement('div');
         card.className = 'question-card';
         
@@ -358,17 +546,13 @@ function renderReview() {
         });
         
         const statusText = document.createElement('p');
-        statusText.style.marginTop = '16px';
-        statusText.style.fontWeight = 'bold';
-        if (userAns === q.answer) {
-            statusText.textContent = "Javobingiz: To'g'ri";
-            statusText.style.color = "var(--success)";
-        } else if (userAns === null || userAns === undefined) {
-            statusText.textContent = "Javobingiz: Belgilanmagan";
-            statusText.style.color = "var(--error)";
+        statusText.className = 'review-status';
+        if (userAns === null || userAns === undefined) {
+            statusText.textContent = "❌ Javob berilmagan";
+            statusText.classList.add('status-unanswered');
         } else {
-            statusText.textContent = "Javobingiz: Noto'g'ri";
-            statusText.style.color = "var(--error)";
+            statusText.textContent = "❌ Noto'g'ri javob";
+            statusText.classList.add('status-wrong');
         }
         
         card.appendChild(qNum);
