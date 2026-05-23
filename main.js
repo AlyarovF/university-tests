@@ -7,6 +7,7 @@ let userAnswers = {};
 let timerInterval = null;
 let timeLeft = 25 * 60; // 25 minutes in seconds
 let vibrationEnabled = localStorage.getItem('vibrationEnabled') !== 'false'; // default ON
+let autoScrollEnabled = localStorage.getItem('autoScrollEnabled') !== 'false'; // default ON
 
 // Vibration helper
 function triggerVibration(pattern) {
@@ -56,6 +57,7 @@ const ui = {
 async function init() {
     initTheme();
     initVibrationToggle();
+    initAutoScrollToggle();
     setupEventListeners();
     await loadData();
     renderSubjects();
@@ -84,7 +86,7 @@ function setupEventListeners() {
     if(ui.themeToggleBtn) ui.themeToggleBtn.addEventListener('click', toggleTheme);
     ui.backToHomeBtn.addEventListener('click', () => {
         stopTimer();
-        switchScreen('variants');
+        switchScreen('home');
     });
     ui.homeBtn.addEventListener('click', showHomeScreen);
     ui.finishQuizBtn.addEventListener('click', finishQuiz);
@@ -96,10 +98,20 @@ function setupEventListeners() {
         vibToggle.addEventListener('click', toggleVibration);
     }
     
+    // Auto-scroll toggle
+    const autoScrollToggle = document.getElementById('autoScrollToggleBtn');
+    if (autoScrollToggle) {
+        autoScrollToggle.addEventListener('click', toggleAutoScroll);
+    }
+    
     // Retake button — restart the same variant with fresh randomization
     ui.retakeBtn.addEventListener('click', () => {
         if (currentVariant) {
-            startQuiz(currentVariant);
+            if (currentVariant.id === 'random') {
+                startRandomQuiz(currentSubject);
+            } else {
+                startQuiz(currentVariant);
+            }
         }
     });
     
@@ -114,7 +126,11 @@ function setupEventListeners() {
     ui.reviewBackHomeBtn.addEventListener('click', showHomeScreen);
     ui.reviewRetakeBtn.addEventListener('click', () => {
         if (currentVariant) {
-            startQuiz(currentVariant);
+            if (currentVariant.id === 'random') {
+                startRandomQuiz(currentSubject);
+            } else {
+                startQuiz(currentVariant);
+            }
         }
     });
 }
@@ -188,11 +204,48 @@ function showHomeScreen() {
     switchScreen('home');
 }
 
+function startRandomQuiz(subject) {
+    if (!subject || !subject.questions || subject.questions.length === 0) return;
+    
+    // Pick 25 unique random questions from subject.questions
+    const allQuestions = subject.questions;
+    const shuffledAll = shuffleArray(allQuestions);
+    const selectedQuestions = shuffledAll.slice(0, 25);
+    
+    const randomVariant = {
+        id: 'random',
+        title: 'Tasodifiy Test',
+        questions: selectedQuestions
+    };
+    
+    startQuiz(randomVariant);
+}
+
 function showVariantsScreen(subject) {
     currentSubject = subject;
     ui.subjectTitle.textContent = subject.title;
     ui.variantsGrid.innerHTML = '';
     
+    // 1. Add Special "Tasodifiy Test" Card
+    const randomCard = document.createElement('div');
+    randomCard.className = 'card variant-card random-card';
+    
+    const randomBestScore = getBestScore(subject.id || subject.title, 'random');
+    const randomBestScoreHTML = randomBestScore !== null 
+        ? `<div class="variant-best-score"><span class="best-icon">🏆</span> Eng yaxshi: <strong>${randomBestScore}/25</strong></div>` 
+        : `<div class="variant-best-score no-score"><span class="best-icon">📝</span> Hali topshirilmagan</div>`;
+    
+    randomCard.innerHTML = `
+        <span class="random-badge">Maxsus</span>
+        <h2>Tasodifiy Test</h2>
+        <p>Aralash 25 ta savol</p>
+        <p>Vaqt: 25 daqiqa</p>
+        ${randomBestScoreHTML}
+    `;
+    randomCard.addEventListener('click', () => startRandomQuiz(subject));
+    ui.variantsGrid.appendChild(randomCard);
+    
+    // 2. Add Regular Variant Cards
     subject.variants.forEach(variant => {
         const card = document.createElement('div');
         card.className = 'card variant-card';
@@ -326,6 +379,46 @@ function renderQuiz() {
                     // Celebration for correct answer
                     optBtn.classList.add('correct-pop');
                     launchMiniCelebration(optBtn);
+                }
+
+                // Check completion & handle auto-scroll
+                const totalQuestionsCount = currentQuestions.length;
+                const answeredQuestionsCount = Object.keys(userAnswers).length;
+                
+                if (answeredQuestionsCount === totalQuestionsCount) {
+                    // All questions completed! Auto-submit after a brief delay
+                    setTimeout(() => {
+                        finishQuiz();
+                    }, 1200);
+                } else if (autoScrollEnabled) {
+                    // Auto-scroll to the next UNANSWERED question
+                    let nextUnansweredIndex = -1;
+                    // First search forward
+                    for (let i = index + 1; i < currentQuestions.length; i++) {
+                        if (userAnswers[currentQuestions[i].id] === undefined) {
+                            nextUnansweredIndex = i;
+                            break;
+                        }
+                    }
+                    // If not found forward, search from the beginning
+                    if (nextUnansweredIndex === -1) {
+                        for (let i = 0; i < index; i++) {
+                            if (userAnswers[currentQuestions[i].id] === undefined) {
+                                nextUnansweredIndex = i;
+                                break;
+                            }
+                        }
+                    }
+                    
+                    if (nextUnansweredIndex !== -1) {
+                        const nextQ = currentQuestions[nextUnansweredIndex];
+                        const nextCard = document.getElementById(`q-${nextQ.id}`);
+                        if (nextCard) {
+                            setTimeout(() => {
+                                nextCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            }, 1200);
+                        }
+                    }
                 }
             });
             
@@ -612,6 +705,32 @@ function updateVibrationButton(btn) {
         btn.innerHTML = '📴 Tebranish: <strong>O\'chirilgan</strong>';
         btn.classList.remove('vibration-on');
         btn.classList.add('vibration-off');
+    }
+}
+
+// Auto-scroll toggle logic
+function initAutoScrollToggle() {
+    const btn = document.getElementById('autoScrollToggleBtn');
+    if (!btn) return;
+    updateAutoScrollButton(btn);
+}
+
+function toggleAutoScroll() {
+    autoScrollEnabled = !autoScrollEnabled;
+    localStorage.setItem('autoScrollEnabled', autoScrollEnabled.toString());
+    const btn = document.getElementById('autoScrollToggleBtn');
+    if (btn) updateAutoScrollButton(btn);
+}
+
+function updateAutoScrollButton(btn) {
+    if (autoScrollEnabled) {
+        btn.innerHTML = '⬇️ Avtomatik o\'tish: <strong>Yoqilgan</strong>';
+        btn.classList.remove('autoscroll-off');
+        btn.classList.add('autoscroll-on');
+    } else {
+        btn.innerHTML = '⏸️ Avtomatik o\'tish: <strong>O\'chirilgan</strong>';
+        btn.classList.remove('autoscroll-on');
+        btn.classList.add('autoscroll-off');
     }
 }
 

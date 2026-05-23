@@ -693,10 +693,12 @@ body.dark-mode .variant-best-score.no-score {
 .home-controls {
     display: flex;
     justify-content: center;
+    gap: 16px;
     margin-bottom: 24px;
+    flex-wrap: wrap;
 }
 
-.vibration-toggle {
+.vibration-toggle, .autoscroll-toggle {
     font-size: 14px;
     padding: 10px 20px;
     border-radius: 100px;
@@ -707,36 +709,74 @@ body.dark-mode .variant-best-score.no-score {
     border: 1px solid;
 }
 
-.vibration-toggle.vibration-on {
+.vibration-toggle.vibration-on, .autoscroll-toggle.autoscroll-on {
     background: linear-gradient(135deg, rgba(52, 211, 153, 0.15), rgba(5, 150, 105, 0.1));
     color: var(--success);
     border-color: rgba(5, 150, 105, 0.3);
 }
 
-.vibration-toggle.vibration-on:hover {
+.vibration-toggle.vibration-on:hover, .autoscroll-toggle.autoscroll-on:hover {
     background: linear-gradient(135deg, rgba(52, 211, 153, 0.25), rgba(5, 150, 105, 0.18));
     box-shadow: 0 4px 16px rgba(5, 150, 105, 0.2);
 }
 
-.vibration-toggle.vibration-off {
+.vibration-toggle.vibration-off, .autoscroll-toggle.autoscroll-off {
     background: rgba(100, 116, 139, 0.1);
     color: var(--text-muted);
     border-color: rgba(100, 116, 139, 0.2);
 }
 
-.vibration-toggle.vibration-off:hover {
+.vibration-toggle.vibration-off:hover, .autoscroll-toggle.autoscroll-off:hover {
     background: rgba(100, 116, 139, 0.18);
     box-shadow: 0 4px 16px rgba(100, 116, 139, 0.15);
 }
 
-body.dark-mode .vibration-toggle.vibration-on {
+body.dark-mode .vibration-toggle.vibration-on, body.dark-mode .autoscroll-toggle.autoscroll-on {
     background: linear-gradient(135deg, rgba(52, 211, 153, 0.2), rgba(52, 211, 153, 0.08));
     border-color: rgba(52, 211, 153, 0.3);
 }
 
-body.dark-mode .vibration-toggle.vibration-off {
+body.dark-mode .vibration-toggle.vibration-off, body.dark-mode .autoscroll-toggle.autoscroll-off {
     background: rgba(148, 163, 184, 0.1);
     border-color: rgba(148, 163, 184, 0.2);
+}
+
+/* Special Random Card Style */
+.card.random-card {
+    background: linear-gradient(135deg, rgba(129, 140, 248, 0.1), rgba(139, 92, 246, 0.1));
+    border: 2px dashed rgba(139, 92, 246, 0.4);
+    box-shadow: 0 8px 32px rgba(139, 92, 246, 0.15);
+}
+
+.card.random-card::before {
+    background: linear-gradient(90deg, #8b5cf6, #ec4899);
+}
+
+body.dark-mode .card.random-card {
+    background: linear-gradient(135deg, rgba(129, 140, 248, 0.15), rgba(139, 92, 246, 0.15));
+    border-color: rgba(139, 92, 246, 0.6);
+}
+
+.card.random-card h2 {
+    background: linear-gradient(135deg, #8b5cf6, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.card.random-card .random-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: linear-gradient(135deg, #8b5cf6, #ec4899);
+    color: white;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 4px 10px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
 }
 
 /* Utilities */
