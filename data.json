@@ -6429,6 +6429,1673 @@
           "answer": 1
         }
       ]
+    },
+    {
+      "id": "menejment",
+      "title": "Menejment",
+      "questions": [
+        {
+          "id": 1,
+          "qn": "Menejment deganda nima tushuniladi?",
+          "options": [
+            "boshqaruv, ya’ni resurslarni, odamlarni boshqarish, samarali faoliyat olib borish va foyda olishni bilish, uni ko‘paytirish jarayonidir",
+            "nafaqat mahsulot yoki xizmatni sotish, balki bozorni chuqur tahlil qilish, mijoz ehtiyojlarini to‘g‘ri aniqlash, raqobat muhitini hisobga olish va resurslardan oqilona foydalanish jarayonidir. Bu jarayon daromad olish bilan cheklanmaydi",
+            "ishlab chiqarish munosabatlarini nazorat qilish",
+            "samarali faoliyat olib borish va foyda olishni bilish, uni ko‘paytirish jarayonidir"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 2,
+          "qn": "Boshqaruv usullari:",
+          "options": [
+            "kishilarga ta’sir etishning umumiy vositalari va yo‘llari",
+            "faoliyat yo‘nalish",
+            "rahbarni shaxsiy sub’ektiv jihatlarining qo‘llanishi",
+            "tashkilotning funksional bo‘g‘inlarining vazifalarini bajarilishi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 3,
+          "qn": "Qaror qabul qilish bu:",
+          "options": [
+            "alternativ yechim tanlash",
+            "rozilik berish",
+            "muammolarni o‘rganish",
+            "erishilgan natijalarga baho berish"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 4,
+          "qn": "Menejmentning asosiy tamoyillari?",
+          "options": [
+            "demokratiyalash tamoyili, ierarxiya tamoyili, rejalashtirish tamoyili, yakkahokimlik tamoyili,  ilmiylik tamoyili, qayta aloqalar tamoyili, javobgarlik tamoyili",
+            "boshqaruv jarayonida xodimlar va manfaatdor tomonlarning fikrini inobatga olish, qaror qabul qilishda jamoaviylikni ta’minlashni anglatadi. Bu tamoyil ochiqlik, shaffoflik va o‘zaro hurmatga asoslanadi",
+            "demokratiyalash tamoyili, ierarxiya tamoyili, ilmiylik tamoyili",
+            "demokratiyalash tamoyili, ierarxiya tamoyili, rejalashtirish tamoyili, taqsimlash tamoyili"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 5,
+          "qn": "Menejment subyekti bo‘lib:",
+          "options": [
+            "boshqaruv organlari hisoblanadi",
+            "konsernlar hisoblanadi",
+            "ijro etuvi hokimiyat va boshqaruv organlari hisoblanadi",
+            "ijro etuvchi hokimiyat hisoblanadi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 6,
+          "qn": "Menejment  fani nimani o‘rgatadi?",
+          "options": [
+            "boshqaruvchiga tanlovni to‘g‘ri amalga oshirishni va ishchan qarorni qabul qilishni o‘rgatuvchi fandir",
+            "boshqaruvchiga rejalar tuzishni o‘rgatuvchi fandir",
+            "Boshqaruvchiga prognoz qilishni o‘rgatuvchi fandir",
+            "tashkilot faoliyatida yuzaga kelishi mumkin bo‘lgan moliyaviy, moddiy va ma’naviy yo‘qotishlarni oldindan aniqlash, ularning sabablarini tahlil qilish hamda oldini olish choralarini ishlab chiqishni o‘rgatuvchi ilmiy-amaliy fandir"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 7,
+          "qn": "Menejment mohiyati quyidagilardan iborat:",
+          "options": [
+            "qo‘yilgan maqsadga erishish yo’lidagi boshqaruv harakatlari",
+            "bu boshqaruv huquqi haqidagi va funksiya faoliyatini amalga oshiruvchi fan",
+            "bu funksiya faoliyati ko‘rinishi",
+            "bu inson bilimlar sohasini o’rganadi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 8,
+          "qn": "«Menejment» kursi iqtisodiy fanlar ichidagi qaysi fanlar jumlasiga kiradi:",
+          "options": [
+            "umumiqtisodiy",
+            "tarmoq",
+            "funksional",
+            "amaliy fanlar"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 9,
+          "qn": "Xarajatlar deganda nima tushuniladi?",
+          "options": [
+            "bu mahsulotni ishlab chiqarish (xizmat ko‘rsatish) va uni sotish hamda xodimlarga to‘lash uchun sarflanadigan mablag‘lar",
+            "bu mahsulot (xizmat)ning iste’molchilarga qanchalik ijobiy natija keltirishi — uning foydalilik darajasi, ehtiyojlarni qondirish qobiliyati va kutilgan natijani qay darajada oqlashi bilan belgilanadi",
+            "bu tovar va xizmatlarning pulda ifodalangan qiymati",
+            "bu tovar va xizmatlarning moddiy ifodalangan qiymati"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 10,
+          "qn": "Qayta aloqalar tamoyili nimani anglatadi?",
+          "options": [
+            "bu boshqaruv jarayonida amalga oshirilgan qaror va harakatlar natijalari to‘g‘risida ma’lumotlarni doimiy ravishda qabul qilish, ularni tahlil qilish va shu asosda faoliyatni takomillashtirib borishni anglatadi",
+            "bu tamoyil, eng avvalo, boshqaruvchilarning javobgarligini nazarda tutadi",
+            "bu tashkilotning turli darajadagi tuzilmalari o‘rtasida uyg‘unlik va muvozanatni ta’minlash, ularning o‘zaro hamkorlik darajasi hamda rivojlanish sur’atlarini tahlil qilishni anglatadi. Bu jarayon har bir bo‘g‘inning vazifasi, vakolati va mas’uliyatini aniq belgilash orqali umumiy maqsad sari samarali harakat qilishni ta’minlaydi",
+            "ommani boshqarishga keng ko‘lamda jalb qilishni, kengash va maslahat bilan ishlarning bajarilishini talab qiladi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 11,
+          "qn": "Baho deganda nima tushuniladi?",
+          "options": [
+            "bu tovar va xizmatlarning pulda ifodalangan qiymatidir",
+            "bu mahsulotni sotish hamda xodimlarga to‘lash uchun sarflanadigan mablag‘lardir",
+            "bu mahsulot (xizmat)ning ist’emolchilarga qanchalik ijobiy natija keltirishidir",
+            "mahsulotga ketgan xarajatlar yig‘indisi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 12,
+          "qn": "Boshqarishning sir-asrorlarini ilmiy asosda o‘rganishda menejment fani quyidagi usullarning qaysi birini qo‘llaydi:",
+          "options": [
+            "modellashtirish usuli, sistemali yondashuv usuli, eksperiment usuli, kuzatish usuli",
+            "eksperiment usuli, SWOT tahlil",
+            "kuzatish usuli, qayta aloqalar, irarxiyalik",
+            "modellashtirish usuli, prognozlashtirish, tahlil qilish, qayta aloqalar, irarxiyalik"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 13,
+          "qn": "Naf  deganda nima tushuniladi?",
+          "options": [
+            "bu mahsulot (xizmat)ning ist’emolchilarga qanchalik ijobiy natija keltirishidir",
+            "bu tovar va xizmatlarning pulda ifodalangan qiymatidir",
+            "bu mahsulotni ishlab chiqarish (xizmat ko‘rsatish) uchun sarflanadigan qiymat",
+            "bu mahsulotni ishlab chiqarish (xizmat ko‘rsatish) qiymati"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 14,
+          "qn": "Yakkahokimlik tamoyili nimani anglatadi?",
+          "options": [
+            "boshqarishga tayinlangan shaxs tomonidan bajarilib, unga boshqariladigan obyekt, uning mol-mulki, pul mablag‘lari ishonib topshiriladi",
+            "boshqarish bo‘g‘inlari o‘rtasidagi taraqqiyot nisbatlarini aniqlaydi, shartnomalarning bajarilishini tashkil qiladi va nazorat qiladi",
+            "bu tamoyil, bir tomonidan, markaziy, ikkinchi tomondan esa, viloyat shaxar va tumanlar darajasidagi davlat hokimiyati xamda boshqaruv idoralarining vazifalarini aniq belgilanishini talab qiladi",
+            "topshiriqni berishda tushundinglarmi? deb so‘rash etarli emas. Bunday savolga javobgar shaxslardan tasdiqlovchi javobniiso‘rash kerak"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 15,
+          "qn": "Rejalashtirish tamoyili nimani anglatadi?",
+          "options": [
+            "boshqarish bo‘g‘inlari o‘rtasidagi taraqqiyot nisbatlarini aniqlaydi, shartnomalarning bajarilishini tashkil qiladi va nazorat qiladi",
+            "bu tamoyil, bir tomonidan, markaziy, ikkinchi tomondan esa, viloyat shaxar va tumanlar darajasidagi davlat hokimiyati xamda boshqaruv idoralarining vazifalarini aniq belgilanishini talab qiladi",
+            "topshiriqni berishda tushundinglarmi? deb so‘rash yetarli emas. Bunday savolga javobgar shaxslardan tasdiqlovchi javobni, topshiriqni to‘g‘ri tushunganligini so‘rash kerak",
+            "ommani boshqarishga keng ko‘lamda jalb qilishni, kengash va maslaxat bilan ishlarning bajarilishini talab qiladi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 16,
+          "qn": "Javobgarlik tamoyili nimani anglatadi?",
+          "options": [
+            "bu tamoyil, eng avvalo, boshqaruvchilarning javobgarligini nazarda tutadi",
+            "topshiriqni berishda tushundinglarmi deb so‘rash etarli emasligi",
+            "boshqarish bo‘g‘inlari o‘rtasidagi taraqqiyot nisbatlarini aniqlaydi",
+            "ommani boshqarishga keng ko‘lamda jalb qilishni, kengash va maslaxat bilan ishlarning bajarilishini talab qiladi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 17,
+          "qn": "Ierarxiya tamoyili nimani anglatadi?",
+          "options": [
+            "boshqarishning pog‘onaligiga asolanadi va bir tomonidan markaziy, ikkinchi tomondan esa, viloyat shaxar va tumanlar darajasidagi davlat hokimiyati xamda boshqaruv idoralarining vazifalarini aniq belgilanishini talab qiladi",
+            "xodim mas’uliyati topshiriqni to‘g‘ri tushunish, uni vijdonan bajarish, belgilangan muddatlarga rioya qilish va natija uchun javob berishni o‘z ichiga oladi. U o‘z vakolati doirasida tashabbus ko‘rsatishi, yuzaga kelgan muammolar haqida rahbarga o‘z vaqtida ma’lumot berishi lozim.",
+            "boshqarish bo‘g‘inlari o‘rtasidagi taraqqiyot nisbatlarini aniqlaydi",
+            "ommani boshqarishga keng ko‘lamda jalb qilishni, kengash va maslaxat bilan ishlarning bajarilishini talab qiladi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 18,
+          "qn": "Boshqaruvda tizimli yondashuv nimani ifodalaydi?",
+          "options": [
+            "boshqaruv obyekti murakkab ijtimoiy-iqtisodiy, o‘zgaruvchan tizim, ichki tartib va o‘zaro aloqaga bir butun yaxlitlikni tashkil etuvchi unsurlar yig‘indisi sifatida o‘rganilishini ifodalaydi",
+            "boshqaruv vazifalarini bajarishda korxona va tarmoqlar o‘rtasida nazorat qilishni ifodalaydi",
+            "boshqaruv vazifalarini bajarishda korxona va tarmoqlar o‘rtasida jarayon o‘zgarishlariga e’tibor berishni ifodalaydi.",
+            "boshqaruv vazifalarini bajarishda tashkilotlarning tarkibiy tuzilishini ifodalaydi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 19,
+          "qn": "Boshqaruvda vaziyatli yondashuv nimani ifodalaydi?",
+          "options": [
+            "boshqaruv vazifalarini bajarishda korxona ichida hamda korxona va tarmoqlar o‘rtasida vaziyat o‘zgarishlarini e’tibor berish sifatida o‘rganilishini ifodalaydi",
+            "boshqaruv vazifalarini bajarishda nazorat qilishni ifodalaydi",
+            "boshqaruv vazifalarini bajarishda korxona va tarmoqlar o‘rtasida miqdoriy o‘zgarishlariga e’tibor berishni ifodalaydi",
+            "boshqaruv obyekti murakkab ijtimoiy-iqtisodiy, o‘zgaruvchan tizim, ichki tartib va o‘zaro aloqaga bir butun yaxlitlikni tashkil etuvchi unsurlar yig‘indisi sifatida o‘rganilishini ifodalaydi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 20,
+          "qn": "Boshqaruvda jarayonli yondashuv nimani ifodalaydi?",
+          "options": [
+            "boshqaruv vazifalarini bajarishda korxona va tarmoqlar o‘rtasida jarayon o‘zgarishlariga e’tibor berishni ifodalaydi",
+            "boshqaruv obyekti murakkab ijtimoiy-iqtisodiy, o‘zgaruvchan tizim, ichki tartib va o‘zaro aloqaga bir butun yaxlitlikni tashkil etuvchi unsurlar yig‘indisi sifatida o‘rganilishini ifodalaydi",
+            "boshqaruv vazifalarini bajarishda korxona va tarmoqlar o‘rtasida miqdoriy o‘zgarishlariga e’tibor berishni ifodalaydi",
+            "boshqaruv vazifalarini bajarishda korxona ichida hamda korxona va tarmoqlar o‘rtasida vaziyat o‘zgarishlari e’tibor berish sifatida o‘rganilishini ifodalaydi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 21,
+          "qn": "Boshqaruvda miqdoriy yondashuv nimani ifodalaydi?",
+          "options": [
+            "boshqaruv vazifalarini bajarishda korxona va tarmoqlar o‘rtasida miqdoriy o‘zgarishlariga e’tibor berishni ifodalaydi",
+            "boshqaruv vazifalarini bajarishda korxona ichida hamda korxona va tarmoqlar o‘rtasida vaziyat o‘zgarishlari e’tibor berish sifatida o‘rganilishini ifodalaydi",
+            "boshqaruv vazifalarini bajarishda korxona va tarmoqlar o‘rtasida jarayon o‘zgarishlariga e’tibor berishni ifodalaydi",
+            "ichki tartib va o‘zaro aloqaga bir butun yaxlitlikni tashkil etuvchi unsurlar yig‘indisi sifatida o‘rganilishini ifodalaydi."
+          ],
+          "answer": 1
+        },
+        {
+          "id": 22,
+          "qn": "Teylorning zamondoshi va ishining davomchisi amerikalik iqtisodchi…",
+          "options": [
+            "G.Emerson",
+            "A.Fayol",
+            "E.Meyo",
+            "G.Ford"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 23,
+          "qn": "Qaysi maktabning vujudga kelishi munosabati bilan mutaxassislar umum tashkilot darajasidagi boshqaruv muammolari bilan shug‘ullana boshladilar?",
+          "options": [
+            "ma’muriy boshqaruv maktabi",
+            "ilmiy boshqaruv maktabi",
+            "insoniy munosabatlar maktabi",
+            "tizimli boshqaruv maktabi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 24,
+          "qn": "Kimlar ilmiy menejmentning (1885-1920) namoyondalari bo‘lgan?",
+          "options": [
+            "F.Teylor, G.Emerson",
+            "A.Fayol, M.Veber",
+            "E.Meyo, R.Laykert",
+            "G.Saymon, P.Druker, E.Deyl"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 25,
+          "qn": "Sohibqiron Amir Temur davlat va jamiyatni boshqarishda nechta ijtimoiy siyosiy guruhga tayangan:",
+          "options": [
+            "12 ta",
+            "9 ta",
+            "10 ta",
+            "14 ta"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 26,
+          "qn": "Fayolning nechta boshqaruv tamoyillari mavjud?",
+          "options": [
+            "14",
+            "12",
+            "13",
+            "15"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 27,
+          "qn": "Boshqarish ta’limotidagi asosiy maktablarni sanab o’ting",
+          "options": [
+            "ilmiy menejment maktabi, mumtoz menejment maktabi, \"Insoniy munosabatlar maktabi\", miqdoriy tizimli menejment maktabi",
+            "boshqaruv nazariyasining dastlabki ilmiy yo‘nalishlaridan biri bo‘lib, tashkilotni aniq tuzilma, qat’iy tartib va mehnat taqsimoti asosida boshqarishni ilgari suradi",
+            "aralash, chiziqli, funksional menejment maktablari",
+            "innovatsion menejment maktabi, demokratik menejment maktabi, liberal, menejment maktabi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 28,
+          "qn": "Klassik - ma’muriy maktabning yorqin namoyondasi:",
+          "options": [
+            "Anri Fayol",
+            "F.Teylor",
+            "Meri Parker Follet",
+            "A Maslou"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 29,
+          "qn": "Klassik yoki ma’muriy boshqaruv maktabi fikrlarning rivojlanish davri:",
+          "options": [
+            "1920-1950 yil",
+            "1885-1920 yil",
+            "1930 – 1950 yildan hozirgi davrgacha",
+            "1950 –  hozirgi davrgacha"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 30,
+          "qn": "Fayolning diqqat markazida, eng avvalo:",
+          "options": [
+            "14 tadan iborat boshqarish prinsiplari turadi",
+            "ikki prinsip, ya’ni aniq qo‘yilgan maqsad va g‘oyalar, shuningdek oqil va sog‘lom fikr yotadi",
+            "«insoniy munosabatlar» ni shakllantirish fikri turadi",
+            "yollanma ishchilar mehnatining unumdorligini oshirishda g‘oyatda samarador va maqbul usullarni izlash turadi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 31,
+          "qn": "Ilmiy boshqaruv maktabi fikrlarining rivojlanish davri:",
+          "options": [
+            "1885 – 1920 yil",
+            "1920 – 1950 yil",
+            "1930 – 1950 yildan hozirgi davrgacha",
+            "1950 – hozirgi davrgacha"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 32,
+          "qn": "Amir Temurning davlatni boshqarish tamoyillari nimalardan iborat?",
+          "options": [
+            "ilmiylik, yakka hokimlik, ierarxiya, demokratiya, mashvarat",
+            "buyruqbozlik, kattik markazlashuv, formalizm",
+            "bilimdonlik, ierarxiya, javobgarlik",
+            "avtokratik, yakka hokimlik, buyruqbozlik, konservatizm"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 33,
+          "qn": "Mehnatni texnokratik boshqarilishiga qaysi maktablar asos solishdi?",
+          "options": [
+            "“Ilmiy menejment” va “mumtoz menejment” namoyandalari",
+            "“Ilmiy menejment” va “insoniy munosabatlar maktabi” namoyandalari",
+            "“Mumtoz menejment” va “insoniy munosabatlar maktabi” namoyandalari",
+            "“Ilmiy menejment” va “Tizimli menejment” namoyondalari"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 34,
+          "qn": "F. Teylor menejmentning qaysi tamoyillarini aniqlagan?",
+          "options": [
+            "ishchini ilmiy tanlash, ishchini ilmiy o‘qitish va ishni ixtisoslashtirish",
+            "ishni ixtisoslashtirish",
+            "ishchini ilmiy tanlash, ishchini ilmiy o‘qitish",
+            "ishni samarali bajarilishi uchun ishchilarni resurslar bilan ta’minlash"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 35,
+          "qn": "“Ilmiy menejment” maktabi qachon va qayerda rivojlandi?",
+          "options": [
+            "XIX asrning oxiri va XX asrning boshlarida Amerikada shakllana boshlagan",
+            "XVIII asrning oxiri va XIX asrning boshlarida Fransiyada shakllana boshlagan",
+            "rag’batlantiruvchi marketing XVIII asrning oxiri va XIX asrning boshlarida Xitoyda shakllana boshlagan",
+            "XIX asrning oxiri va XX asrning boshlarida Yaponiyada shakllana boshlagan"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 36,
+          "qn": "«Insoniy munosabatlar» maktabi:",
+          "options": [
+            "ishchi — bu fikrsiz robot emas degan g‘oyani ilgari surgan maktabdir",
+            "«teylorizm»ni qo‘llab quvvatlovchi maktabdir",
+            "mehnatni texnokratik boshqarilishiga asos solgan va unumdorlikka qaratilgan maktabdir",
+            "«tizimli menejment»ga qarshi turuvchi maktabdir"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 37,
+          "qn": "Kimlar \"Inson munosabatlari\" maktabi namoyandalari bo‘lgan:",
+          "options": [
+            "Meyo E, Laykert R",
+            "G.Ford, A.Maslou",
+            "Teylor A., Emerson G.",
+            "Druker P, Deyl E."
+          ],
+          "answer": 1
+        },
+        {
+          "id": 38,
+          "qn": "F.Teylor tamoyiliga binoan…",
+          "options": [
+            "ishchidan boshliqlarning barcha buyruqlarini xech qanday muloxaza yuritmasdan, biror bir shaxsiy tashabbus ko‘rsatmasdan aniq hamda tez bajarishini talab qilinar edi",
+            "bunday yondashuvda ishchining kasbiy salohiyati, tashabbuskorligi va mustaqil fikrlashi qadrlanadi. Unga o‘z sohasida qaror qabul qilishda ma’lum darajada erkinlik beriladi hamda mas’uliyat yuklatiladi. Natijada xodim o‘z ishiga yanada mas’uliyat bilan yondashadi, sifat va samaradorlik oshadi",
+            "boshqaruv hodimlari samarali boshqaruvni tashkil etishi lozim bo‘lgan",
+            "ishchi va boshqaruvchilar teng ko‘rilgan"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 39,
+          "qn": "Amir Temur fikriga ko‘ra, vazirlar quyida qayd qilingan sifatlarning qaysi biriga ega bo‘lishlari shart:",
+          "options": [
+            "asillik, toza nasllik va ulug‘vorlik",
+            "aqlli, farosatlilik",
+            "sipox bilan raiyat axvolidan boxabarlik va ularga g‘amxo‘rlik ko‘rsatish, yaxshi muomala",
+            "sabr-bardoshlilik, muloyimlik"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 40,
+          "qn": "X(iks) va U (igrek) nazariyasiniig namoyandasi kim:",
+          "options": [
+            "amerikalik olim D. Mak-Gregor",
+            "amerikalik iqtisodchi G. Emerson",
+            "amerikalik muhandis F. Teylor",
+            "Fransuz olimi A Fayol"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 41,
+          "qn": "F. Teylorning diqqat markazida, eng avvalo:",
+          "options": [
+            "yollanma ishchilar mehnatining unumdorligini oshirishda g‘oyatda samarador va maqbul usullarni izlash turadi",
+            "ikki prinsip ya’ni aniq qo‘yilgan maqsad va g‘oyalar, shuningdek oqil va sog‘lom fikr turadi, unumdorligini oshirish",
+            "14 tadan iborat boshqarish prinsiplari turadi",
+            "«insoniy munosabatlar», «birdamlik ruxi», «mushtaraklik tuyg‘usi» shakllantirish fikri turadi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 42,
+          "qn": "Boshqaruvning umumdavlat organlari quyidagilardan iborat?",
+          "options": [
+            "qonun chiqaruvchi organ, ijro etuvchi organ, sud organlari",
+            "sud organlari, Viloyat hokimiyati, tuman hokimligi",
+            "Oliy Majlis, konsernlar, jamoat birlashmalari",
+            "viloyatlar xalq deputatlari kengashi, tuman, shaxar xalq deputatlari kengashi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 43,
+          "qn": "Funksiya bu…",
+          "options": [
+            "biror kimsa yoki narsaning ish faoliyat doirasi, vazifasi",
+            "ichki faoliyat doirasi",
+            "vazifa va majburiyat",
+            "imkon doirasi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 44,
+          "qn": "Quyidagilarning qaysi biri menejmentning prinsiplaridan biri hisoblanadi?",
+          "options": [
+            "ierarxiya prinsipi",
+            "nomenklatura prinsipi",
+            "formalizm, rasmiyatchilik prinsipi",
+            "konservatizm prinsipi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 45,
+          "qn": "Menejment fanining tahlil usullari:",
+          "options": [
+            "sistemali, kompleks, kuzatish, integratsion, iqtisodiy matematik, eksperiment, sotsiologik kuzatuv",
+            "mikrodarajada, makrodarajada",
+            "sistemali, samarali, ierarxik",
+            "sotsiologik kuzatuv, sistemali, aloqali, funksional, chiziqli, eksperiment, mikrodarajada, makrodarajada"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 46,
+          "qn": "Yuksak ma’naviyat  tamoyili:",
+          "options": [
+            "o‘zini va o‘z xalqining vatanini qadru qimmati, or-nomusini anglab, uni himoya qilish",
+            "mustaqillik tafakkurini kengroq tushunish",
+            "yuksak g‘oyalar, yangi kashfiyotlar, yaxshi niyatlar og‘ushida mehnat qilish, rahbar va xodimlar o‘z faoliyatida nafaqat iqtisodiy manfaatlarni, balki jamiyatni anglash",
+            "qat’iy belgilangan narxlardan ekrin narxlarga o‘tish"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 47,
+          "qn": "Iqtisodiy munosabatlarni demokratiyalash tamoyili deganda:",
+          "options": [
+            "monopollashgan iqtisoddan erkin iqtisodga o‘tish tushuniladi",
+            "mustaqillik fikrini kengroq anglash tushuniladi",
+            "davlat va jamiyat boshqaruvida qonunning ustivorligi tushuniladi",
+            "respublikaning dunyo xamjamiyatiga kirish sur’atlarini tezlashtirish tushuniladi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 48,
+          "qn": "Demokratiya tamoyili deganda:",
+          "options": [
+            "insonnni o‘z hohish irodasini erkin bildirishi hamda uni amalga oshirish",
+            "sotsialistik musobaqadan erkin raqobatga o‘tish",
+            "barcha fuqarolarni teng huquqliligi",
+            "davlatlashgan mulkdan xilma-xil mulkchilikka tayangan iqtisodiyotga o‘tish"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 49,
+          "qn": "Maqsad bu:",
+          "options": [
+            "u yoki bu niyatga erishish uchun ko‘zda tutilgan mushtarak orzu",
+            "maqsadning muxumligi jixatidan zanjirlanishi, tartiblanishi tushuniladi",
+            "“jang” bilan zabt qilinadigan bamisoli cho‘qqidir",
+            "tartibga solish va muvofiqlashtirish"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 50,
+          "qn": "Quyida qayd qilingan funksiyalarning qaysi biri boshqarishning sotsial funksiyasiga kiradi?",
+          "options": [
+            "xodimlarning ijtimoiy himoyasini ta’minlash",
+            "boshqarish devoni xodimlari o‘rtasida ma’suliyatlarni belgilash",
+            "korxonada marketing xizmatini uyushtirish",
+            "mablag‘larni aylanma xarakatini ta’minlash"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 51,
+          "qn": "“Maqsadlar shajarasi” deganda",
+          "options": [
+            "maqsadlar bilan ularga erishish vositalari o‘rtasidagi aloqaning grafik tasviri tushuniladi",
+            "maqsadni qo‘yish va amalga oshirishning mavjud shart-sharoitlarga bog‘liqligi tushuniladi",
+            "bir maqsadning boshqa maqsadga bo‘ysunishi tushuniladi",
+            "maqsadning muxumligi jixatidan zanjirlanishi, tartiblanishi tushuniladi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 52,
+          "qn": "Quyida qayd qilingan funksiyalarning qaysi biri boshqarishning ma’naviy—ma’rifiy funksiyasiga kiradi:",
+          "options": [
+            "xodimlarda halollikni, adolat tuyg‘usini tarbiyalashga xizmat qilish",
+            "xodimlarning sotsial ehtiyojlarini qondirish",
+            "boshqarish apparati xodimlari o‘rtasida ma’suliyatlarni belgilash va anglash",
+            "foyda olishni ta’minlash"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 53,
+          "qn": "X nazariyasiga ko‘ra yollanma xodim:",
+          "options": [
+            "tabiatdan yalqov bo‘ladi",
+            "uddaburon bo‘ladi",
+            "o‘z zimmasiga ma’suliyat olishga tayyor bo‘ladi",
+            "tabiatdan faol, tashabbuskor bo‘ladi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 54,
+          "qn": "Y nazariyasiga ko‘ra yollanma xodim",
+          "options": [
+            "tabiatdan faol, uddaburon, tashabbuskor bo‘ladi",
+            "izzat talab bo‘ladi",
+            "tabiatdan yalqov bo‘ladi",
+            "faxm farosatli bo‘ladi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 55,
+          "qn": "Boshqarishning iqtisodiy metodlari:",
+          "options": [
+            "iqtisodiy manfaatlardan foydalanishga asoslanadi",
+            "buyruqlar, farmoyishlar va qo‘llanmalar chiqarish, ularning bajarilishini nazorat qilishga asoslanadi",
+            "kadrlarni to‘g‘ri tanlashga asoslanadi",
+            "boshqarish apparatining muayyan strukturasini tuzishga asoslanadi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 56,
+          "qn": "E.Meyoning diqqat markazida, eng avvalo:",
+          "options": [
+            "\"insoniy munosabatlar\"ni shakllantirish fikri turadi",
+            "14 tadan iborat boshqarish prinsiplari turadi",
+            "ikki prinsip, ya’ni aniq qo‘yilgan maqsad va g‘oyalar, shuningdek oqil va sog‘lom fikr yotadi",
+            "yo’llanma ishchilar mehnatining unumdorligini oshirishda g‘oyatda samarador va maqbul usullarni izlash turadi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 57,
+          "qn": "Boshqaruv qarorlariga qo‘yiladigan talablar?",
+          "options": [
+            "ilmiy asoslanganlik, aloqadorlik, aniq va to‘g‘rilik, qisqalik, tezkorlik",
+            "manfaatdorlik, samaradorlik, ko‘tarinkilik",
+            "samaralilik, operativlik, yakkaboshchilik, muqobillik, mukammalllik",
+            "aniq maqsad, mustaqillik, ijobiy natija, mukammallik"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 58,
+          "qn": "Boshqarishning huquqiy vositalari quyidagilardan iborat:",
+          "options": [
+            "ijtimoiy munosabatlarga yuridik, qonuniy ta’sir o‘tkazish jarayonida qo‘llaniladigan huquqiy  me’yorlar majmui",
+            "iqtisodiy usullardan va manfaatlardan qonuniy foydalanish",
+            "kredit va foiz stavkasi, soliqlar, boj to‘lovlari",
+            "eksport va importni muvozanatlashtirish, innovatsiyani yo‘lga qo‘yish, iqtisodiyot tarkibini o‘zgartirish"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 59,
+          "qn": "Samaradorlik omili – bu …",
+          "options": [
+            "raqobat sharoitida tashkilot yashab qolishi va muvaffaqqiyat qozonishi uchun muhim bo‘lgan omil",
+            "haqiqiy ishning haqiqiy ishchilar tomonidan boshqarilishi",
+            "savdoning katta xajmi",
+            "ishlab chiqarish xarajatlarining ko‘rsatkichi omili"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 60,
+          "qn": "Firmaning tashkiliy tuzilmasiga qanday omillar ta’sir ko‘rsatadi?",
+          "options": [
+            "iqtisodiy, ijtimoiy, siyosiy, ilmiy, texnikaviy omillar",
+            "ishlab chiqarish omillari",
+            "demografik va geografik omillar",
+            "ish vaqti va mehnat sharoitlari"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 61,
+          "qn": "Ma’muriy buyruqbozlik tizimi sharoitida davlat quyidagi qaysi omillarga asoslanib boshqariladi:",
+          "options": [
+            "avtokratlik prinsipi",
+            "demokratiyalash prinsipi",
+            "demokratiyani tan olmaslik prinsipi",
+            "qayta aloqalar prinsipi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 62,
+          "qn": "Boshqarishning ijtimoiy funksiyasi maqsadi",
+          "options": [
+            "ijtimoiy himoyani ta’minlash",
+            "iqtisodiy rag‘batlantirishni qo‘llash",
+            "xodimlarni mehr-shafqatli va o‘zaro munosabatlarda sabr-toqatli bo‘lish ruhida tarbiyalash",
+            "axborotlar oqimini tashkil qilish"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 63,
+          "qn": "Texnologiya – bu:",
+          "options": [
+            "ilmiy-praktika asosida xom-ashyoni tayyor mahsulotga aylantirishning usullari",
+            "xom-ashyoni qayta taqsimlash usullari",
+            "xom-ashyoni sotishda qo‘llaniladigan jarayon",
+            "Ishchilarni boshqarish jarayonlari"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 64,
+          "qn": "Boshqarish strukturalarining tashkiliy turlari:",
+          "options": [
+            "chiziqli, chiziqli shtabli, funksional, chiziqli funksional, dasturli maqsadli",
+            "bosh shtab, chiziqli, chiziqli shtabli, dasturli maqsadli, chiziqli funksional",
+            "chiziqsiz, funksional, dasturli maqsadli",
+            "funksional, dasturli maqsadli, chiziqsiz funksional, bosh shtab"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 65,
+          "qn": "Boshqaruv funksiyalari deganda nimani tushunasiz?",
+          "options": [
+            "menejmentning ma’lum masalalarini yechishga yo‘naltirilgan ishlar yig‘indisi",
+            "bu boshqaruv apparati xodimlarining mehnat jarayoni",
+            "bu ishlab chiqarish jarayonining muvofiqlashtirib turuvchi marketing",
+            "bu ishlab chiqarishni tashkil etish"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 66,
+          "qn": "Boshqaruv jarayoni bosqichlarini aniqlang?",
+          "options": [
+            "maqsadni aniqlash, holat, muammo, yechim",
+            "oldindan maqsadni bilish, analitik ishlar",
+            "axborot ishlari, harakat variantlari tanlovi",
+            "tashkiliy va amaliy ishlar"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 67,
+          "qn": "Menejmentning eng ko‘p qo’llaniladigan tashkiliy tuzilmasi qaysi?",
+          "options": [
+            "chiziqli funksional",
+            "funksional",
+            "chiziqli",
+            "matritsali loyiha"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 68,
+          "qn": "Boshqaruv tizimlari faoliyat ko‘rsatishining uyg‘unligi, alohida qismlar, kichik tizimlarning qanchalik o‘zaro muvofiqlligiga bog‘liqlik tamoyili?",
+          "options": [
+            "proporsionallik",
+            "dasturlashtirish",
+            "modellashtirish",
+            "muvozanatlashganlik"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 69,
+          "qn": "Boshqarishning tashkiliy tuzilmalari bozorning qanday talablariga javob berishi kerak?",
+          "options": [
+            "tashkiliy tuzilma oddiy va tushunarli, barcha bog‘inlari optimal bo‘lishi kerak",
+            "tashkiliy tuzilma egiluvchan va bozordagi o‘zgarishlarni payqashi kerak",
+            "tashkiliy qurilma bo‘g‘in va bosqichlardan iborat bo‘lishi kerak",
+            "tashkiliy tuzilma funksional bo‘lishi kerak"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 70,
+          "qn": "Amal qilish davriga ko‘ra qaror turi qaysi qatorda to‘g‘ri ko‘rsatilgan?",
+          "options": [
+            "vaqtinchalik qarorlar",
+            "an’anaviy qarorlar",
+            "sterotip qarorlar",
+            "maqsadlar tobeligi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 71,
+          "qn": "Boshqaruv qarorlarini qabul qilishda qo‘llaniladigan usullar qaysilar?",
+          "options": [
+            "iqtisodiy, ijtimoiy, ma’muriy, ruhiy usullar",
+            "muammoni qo‘yish, muammoni yechish, qarorni tanlash, qarorlarning bajarilishini ta’minlash",
+            "iqtisodiyotni diversifikasiyalash, boshqaruvga yordam berish, korxonaga imtiyozlar berish",
+            "huquqiy, ma’muriy, texnikaviy usullar"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 72,
+          "qn": "Menejerlar pog’onasiga ko’ra nechta darajaga bo’linadi ular qaysilar?",
+          "options": [
+            "oliy, o‘rta, quyi",
+            "texnik, boshqaruv, institutsional",
+            "iqtisodiy, moliyaviy, texnik",
+            "gorizontal, vertikal, tarmoqli"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 73,
+          "qn": "Tashkilot missiyasi (zimmasidagi vazifa) nimani anglatadi?",
+          "options": [
+            "tashkilotning nima uchun mavjudligi, oliy maqsadi, faoliyat tavsifi, mijozlar uchun nima qilishli kerakligini",
+            "erishish zarur bo‘lgan natijalarga yo‘naltirilgan bir-biriga bog‘liq harakatlar yig‘indisidir",
+            "yuksak bilimli va intellektual rivojlangan avlodni tarbiyalashni",
+            "samaraga erishish, faoliyat tavsifi, mijozlar uchun nima qilishli kerakligini"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 74,
+          "qn": "Tashkilot strategiyasi bu?",
+          "options": [
+            "erishish zarur bo‘lgan natijalarga yo‘naltirilgan bir-biriga bog‘liq harakatlar yig‘indisi",
+            "faoliyat tavsifi, mijozlar uchun nima qilishli kerakligi",
+            "yuksak bilimli va intellektual rivojlangan avlodni tarbiyalash",
+            "samaraga erishish"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 75,
+          "qn": "Korxonaning boshqaruv modeli deganda nimani tushunasiz?",
+          "options": [
+            "korxonaning boshqaruv strukturasining sxemasi",
+            "boshqaruv apparati xodimlari o‘rtasidagi munosabat",
+            "boshqaruvchi va boshqariluvchi o‘rtasidagi munosabat",
+            "boshqaruvning quyi va oliy bosqichi orasidagi munosabat"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 76,
+          "qn": "Korporatsiya deganda nima tushunasiz?",
+          "options": [
+            "bu aniq vazifalar, yirik maqsadli dasturlar va loyihalarni amalga oshirish maqsadida tashkil etiladigan birlashma",
+            "rivojlangan yirik aksionerlar jamiyati va trestlar birlashmasidir",
+            "moliyaviy jamg‘arma bo‘lib, sarmoyalarni birlashtiradi",
+            "jismoniy va yuridik shaxslarning ko‘ngilli jamoat birlashmalari"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 77,
+          "qn": "Assotsiatsiya deganda nima tushunasiz?",
+          "options": [
+            "korxonalarning paychilik asosidagi ko‘ngilli birlashmasi",
+            "iqtisodiy tizimning asosiy va birlamchi bo‘g‘ini",
+            "xodimlarning ijtimoiy-iqtisodiy huquqlarini va manfaatlarini himoya qiladi.",
+            "noishlab chiqarish tarmoqlari, transport va aloqa korxonalarining ko‘ngilli  birlashmasi."
+          ],
+          "answer": 1
+        },
+        {
+          "id": 78,
+          "qn": "Norasmiy guruhlar deganda nima tushunasiz?",
+          "options": [
+            "bu maqsadga erishish uchun shakllangan tarqoq odamlar guruhidir",
+            "bu berilgan ish yoki uning qismi (operatsiya, jarayon)ni bajaruvchi insonlar",
+            "bu tashkilot nazorati uchun shakllangan guruhdir",
+            "bu strategiyani belgilash uchun shakllangan guruhdir"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 79,
+          "qn": "Korxona bu...",
+          "options": [
+            "yuridik shaxs huquqiga ega boʻlgan mustaqil xoʻjalik yurituvchi subʼyekt",
+            "uyushgan insonlar guruhi va huquqni muhofaza qiluvchi organlar birlashmasi",
+            "Huquqni muhofaza qiluvchi organlar",
+            "foyda olishni ko‘zlovchi insonlar jamiyati"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 80,
+          "qn": "Tashkilotning innovatsion maqsadlari bu:",
+          "options": [
+            "yangi mahsulotni ishlab chiqarish, yangi texnologiyalarni joriy qilish bo‘yicha qo‘yiladigan maqsadlar tushuniladi",
+            "tashkilot va uning xodimlari uchun amalga oshirish jihatdan murakkab, resurs talab qiladigan yoki yuqori darajada mas’uliyatni talab etadigan maqsadlar sifatida tushuniladi",
+            "har kun qabul qilinadigan va amalga oshiriladigan odatiy maqsadlar tushuniladi",
+            "xodimlar malakasini oshirish sohasidagi maqsadlar tushuniladi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 81,
+          "qn": "Sistema-bu:",
+          "options": [
+            "bir nechta elementdan tashkil topgan, yagona, ichki o‘zaro aloqadorlik",
+            "boshqaruv maqsadi va vazifasi, boshqaruv strukturalarining mexanizmi",
+            "ekstropolyatsiya",
+            "boshqaruv strukturalarining mexanizmi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 82,
+          "qn": "Korxona salohiyatining raqobatbardoshligi – bu:",
+          "options": [
+            "uning muhim parametrlari holatini qandaydir tanlab olingan standartlarga nisbatan kompleks baholashdan iborat bo‘lgan salohiyatining solishtirma ta’rifi",
+            "uning hisobot holati nazoratining samaradorligi",
+            "tashkilotning ish samaradorligi, mahsulot sifati, bozor ulushi, moliyaviy natijalari va boshqaruv samaradorligini o‘xshash yoki raqobatchi korxonalar ko‘rsatkichlari bilan solishtirish jarayonini anglatadi",
+            "tanlab olingan strategiyalarga baholash"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 83,
+          "qn": "Tashkilot – bu …",
+          "options": [
+            "maqsadga erishish uchun faoliyati muvofiqlashtirilgan insonlar  birlashmasidir",
+            "hamma uchun qabul qilinadigan qarorning mavjudligi, yagona qonuniyat bilan xarakatlanuvchi jarayon",
+            "raqobatchi korxonalar",
+            "yagona qonuniyat bilan xarakatlanuvchi jarayon"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 84,
+          "qn": "Ishlab chiqarishni boshqarish deganda:",
+          "options": [
+            "buyumlarni iste’molchilar talabiga mos keluvchi sifat tasniflari bilan ishlab chiqarishni ta’minlovchi, maqsadga qaratilgan faoliyat tushuniladi",
+            "korxonada band bo‘lgan kishilar salohiyatini rivojlantirish va undan samarali foydalanish",
+            "bozorda amalga oshiriladigan rahbarlik, tashkilotchilik va ma’muriy xarakterdagi alohida faoliyat tushuniladi, korxonada band bo‘lgan kishilar salohiyatini rivojlantirish va undan samarali foydalanish",
+            "korxona doirasida amalga oshiriladigan rahbarlik, tashkilotchilik, ma’muriy xarakterdagi alohida faoliyat tushuniladi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 85,
+          "qn": "Lizing firmalar qanday firmalar?",
+          "options": [
+            "mashina, asbob-uskuna, transport vositalari, ishlab chiqarish inshootlarini uzoq muddatli ijaraga olish va uzoq muddatli foydalaniladigan tovarlar eksportini kreditlashning shakllaridan biri",
+            "ular turli inshootlar va tuzilmalarni loyihalash, qurish, foydalanishga topshirish bilan shug‘ullanadi",
+            "ular ishlab chiqarishning turli muammolari yuzasidan maslahatlar beradi, loyihalash bilan shug‘ullanadi, ular turli inshootlar va tuzilmalarni loyihalash, qurish, foydalanishga topshirish bilan shug‘ullanadi",
+            "bu firmalarni tavakkalchilik firmalari deb ham atashadi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 86,
+          "qn": "Tashkilotning tashqi muhiti elementlarini ko‘rsating",
+          "options": [
+            "iste’molchilar, raqobatchilar, davlat, mol yetkazib beruvchilar",
+            "mehnatni tashkil etish va ish xaqi bo‘limi hamda tashkiliy bo‘linmalar",
+            "tashkiliy bo‘linmalar",
+            "talab va taklif"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 87,
+          "qn": "Konsalting firmalar qanday firmalar?",
+          "options": [
+            "ular ishlab chiqarishning turli muammolari yuzasidan maslahatlar beradi, loyihalash bilan shug‘ullanadi, xo‘jalik yuritishning yangi shakllariga o‘tish, boshqaruv tizimlarini takomillashtirish va shunga o‘xshash faoliyat turlariga ko‘maklashadi",
+            "tavakkalchilik asosida korxonalar faoliyatini nazorat qiluvchi firmalar",
+            "ilmiy-muhandislik ishlari orqali mavjud jarayonlar takomillashtiriladi, samaradorlik oshiriladi va yangi texnologik echimlar ishlab chiqiladi. Yangi texnika va texnologiyalar yaratish esa mahsulot sifatini yaxshilash, ishlab chiqarish xarajatlarini kamaytirish va bozor talablari bilan mos keladigan innovatsion yechimlarni taqdim etishga xizmat qiladi",
+            "auditorlik xizmatlarini amalga oshiruvchi firmalar"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 88,
+          "qn": "Injiniring firmalari qanday firmalar?",
+          "options": [
+            "ular turli inshootlar va tuzilmalarni loyihalash, qurish, foydalanishga topshirish bilan shug‘ullanadi",
+            "auditorlik xizmatlarini amalga oshiruvchi firmalar",
+            "salohiyati qudratli xo‘jalik tizimi etarlicha moliyaviy vositalari bo‘lmagan boshqa bir korxonaga mashina-uskunalar va boshqa mulkni shartnoma asosida berib turadi",
+            "ular jismoniy va yuridik shaxslarning mulklarini jalb etish va bu mulklardan o‘z ehtiyojlari bo‘yicha erkin foydalanish masalalari bilan shug‘ullanadilar"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 89,
+          "qn": "Menejer va tadbirkor o‘rtasida qanday farq bor?",
+          "options": [
+            "birinchisi yollanma boshqaruvchi, ikkinchisi esa mulk egasi",
+            "birinchisi yollanma boshqaruvchi, ikkinchisi uning faoliyatini nazorat qiluvchi",
+            "birinchisi buyruq beradi, ikkinchisi bajaradi",
+            "ular o‘rtasida xech qanday farq yo‘q"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 90,
+          "qn": "Menejer - bu:",
+          "options": [
+            "ishlab chiqarishni tashkil qilish va boshqarish bo‘yicha professional bilimlarga ega bo‘lgan yollanma boshqaruvchi",
+            "uch kishidan kam bo‘lmagan qo‘l ostida ishlovchiga ega bo‘lgan rahbar, ishlab chiqarishni tashkil qilish sohasidagi mutaxassis",
+            "ishlab chiqarishni tashkil qilish sohasidagi mutaxassis",
+            "boshqaruv organlarida muayyan lavozimni egallagan shaxs"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 91,
+          "qn": "Menejerlar bilim, malaka va ko’nikmasiga ko’ra quyidagilarning qaysilari kiradi?",
+          "options": [
+            "rahbar-diplomat, rahbar-murabbiy, rahbar-innovator",
+            "yuqori pog’onali menejerlar, sangviniklar, xoleriklar va boshqalar",
+            "avtokratik, demokratik va liberal rahbarlar",
+            "sangviyniklar, flegmatiklar, xoleriklar va melanxoliklar"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 92,
+          "qn": "Qanday rahbarlik uslublarini bilasiz?",
+          "options": [
+            "avtokratik, liberal, demokratik",
+            "adolat, e’tibor, rasmiy va norasmiy munosabatlar",
+            "ma’lum qilish, tushuntirish",
+            "muammoni yechish, o‘zaro hamkorlik"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 93,
+          "qn": "Avtokratik rahbarlar bo‘ysinuvchilarning:",
+          "options": [
+            "tashabbuskorligiga yo‘l qo‘ymaydi",
+            "tashabbuskorligiga to‘la-to‘kis tayanadi",
+            "tashabbuskorligini rag‘batlantiradi va undan foydalanadi",
+            "faolligiga rag‘batlantiradi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 94,
+          "qn": "“Karyera” so‘zining ma’nosi nimani anglatadi?",
+          "options": [
+            "“kasbiy pillapoya bo‘yicha ko‘tarilish”",
+            "berilgan ma’lumotlarni taqqoslash",
+            "bir kishi haqida ma’lumot to‘plash",
+            "tashkilotning rivojlanishini prognoz qila olish"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 95,
+          "qn": "Boshqaruvning avtoritar uslubida boshqaruvchi…",
+          "options": [
+            "hamma muammolarni o‘zi xal qiladi",
+            "bir qarorga kelishga oldin qo‘l ostidagilar bilan maslaxatlashadi",
+            "yuqoridan topshiriqlarni kutadi",
+            "hamma javobgarlikni o‘zidan soqit qiladi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 96,
+          "qn": "X nazariyasi sharoitida menejer…",
+          "options": [
+            "xodimlarni doimo majburlash, nazorat qilib turish zarur",
+            "xodimlarni rag‘batlantirib tursa kifoya",
+            "xodimlarga qulay muhit yaratib bersa kifoya",
+            "xodimlarni doimo jarima solish bilan qo‘rqitib turish zarur"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 97,
+          "qn": "SWOT tahlili bu?",
+          "options": [
+            "strategik rejalashtirish usuli bo'lib, u tashkilotning ichki va tashqi muhiti omillarini aniqlashga yordam beradi",
+            "xodimlarga qulay muhit yaratilishi",
+            "ma’muriy xududlarning paydo bo‘lishi",
+            "boshqaruv vazifalari va texnologiyalarini mukammallashuvi, ma’muriy xududlarning paydo bo‘lishi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 98,
+          "qn": "Y nazariyasi sharoitida menejer:",
+          "options": [
+            "xodimlarga qulay muhit yaratib xodimlarni rag‘batlantirib tursa kifoya",
+            "xodimlarga tanbeh berib tursa kifoya",
+            "xodimlarni doimo majburlash, nazorat qilib turish zarur",
+            "xodimlarni doimo majburlash, xodimlarni doimo jazolash, jarima solish bilan qo‘rqitib turish zarur"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 99,
+          "qn": "Liberal rahbarlar kadrlarni tanlashda:",
+          "options": [
+            "beparvolarcha yondashadilar",
+            "kuchli raqobatdoshlardan qutulish payida bo‘ladilar",
+            "ishchan, bilimdon xodimlarga mo‘ljal oladilar, ularni o‘sishiga yordam beradilar",
+            "tashqaridan madad kutadi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 100,
+          "qn": "Firmaning qaysi boshqaruv darajasi xamma bo‘linmalar faoliyatiga muvofiqligi (mosligi) holda firmaning samarali ishlashi va rivojlanishi ta’minlanishini amalga oshiradi?",
+          "options": [
+            "boshqaruvning oliy darajasi-Top management",
+            "boshqaruvning o‘rtacha darajasi-Middle management",
+            "boshqaruvning quyi darajasi-Lower management",
+            "boshqaruvning marketologi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 101,
+          "qn": "Yuqori pog‘onadagi menejerlar",
+          "options": [
+            "firma istiqbolini belgilash uning kelajagi uchun ahamiyatli chora tadbirlarni ishlab chiqish bilan shug‘ullanadi",
+            "firma faoliyatining ayrim tomonlarini, ishlab chiqarish, mehnatni tashkil etish kabilarni boshqarish bilan shug‘ullanadi",
+            "tsex bo‘lim brigada doirasida ishni tashkil etish, kunlik, xaftalik, oylik ish topshiriqlarining bajarilishini boshqarib boradi",
+            "moliya faoliyati yangi tovarlarni o‘zlashtirish texnologiyani qo‘llash mehnatni tashkil etish kabilarni boshqarish bilan shug‘ullanadi."
+          ],
+          "answer": 1
+        },
+        {
+          "id": 102,
+          "qn": "Boshqaruv uslubi…",
+          "options": [
+            "bu boshqaruv jarayonida kelib chiqadigan muammolarni hal qilish usullari, yo‘llari majmuasidir",
+            "bu boshqaruvning tarkibiy tuzilmasi",
+            "bu boshqaruv funksiyalarini samarali bajarish, boshqaruv jarayonida kelib chiqadigan nizolarni hal qilish usullari, yo‘llari majmuasidir",
+            "bu boshqaruv funksiyalarini samarali bajarish"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 103,
+          "qn": "Menejment fani qaysi fanlar bilan uzviy bog’liqlikda o’rganiladi?",
+          "options": [
+            "iqtisodiyot, statistika, psixologiya, axborot va komunikatsiya texnologiyalari",
+            "biologiya, kimyo",
+            "iqtisod, kibernetika, fizika",
+            "iqtisodiyot, statistika, psixologiya, antropologiya, biologiya, kimyo, fizika"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 104,
+          "qn": "Menejerga qo‘yiladigan eng asosiy talablardan biri…",
+          "options": [
+            "kishilarni o‘ziga qarata olishi, ularda ishonch hissini uyg‘ota olishidan, axloqiy sifatlarga ega bo‘lish",
+            "tadqiqot yoki boshqaruv jarayonida qaror qabul qilish uchun zarur bo‘lgan faktlarni tizimli tarzda yig‘ish, tahlil qilish va solishtirish jarayonidir",
+            "psixologik tashxis qo‘yish, ma’lumotlarni sir saqlashdan",
+            "boshqaruv texnologiyalarini yangilash"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 105,
+          "qn": "SWOT tahlil nechta qisimdan iborat?",
+          "options": [
+            "4 ta",
+            "2 ta",
+            "6 ta",
+            "3 ta"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 106,
+          "qn": "Qaysi olim mehnatni «Ilmiy boshqarish» muammosini amaliy jihatdan asoslab bergan?",
+          "options": [
+            "F.Teylor",
+            "E.Meyo",
+            "A.Fayol",
+            "G.Ford"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 107,
+          "qn": "Qachon «Mehnatni ijtimoiy tashkil etish» tushunchasi qo‘llaniladi?",
+          "options": [
+            "jamiyatning ijtimoiy-iqtisodiy tuzilishi, ayni kishilarni mehnatga jalb etish, mehnatning ijtimoiy taqsimoti, ijtimoiy mahsulotni taqsimlash usuli va ishchi kuchini tiklash xususiyatlari ko‘rib chiqilayotganda",
+            "kompaniyada kishilarni mehnatga jalb etish va nazorat qilish jarayonida",
+            "kishilarni mehnatga jalb etishda qayta muvofiqlashtirish o‘tkazish jarayonida",
+            "jamiyat yoki korxona resurslarini qanday taqsimlash, ishchi kuchining mehnatga tayyorligini qanday saqlash va oshirish masalalari tahlil qilinayotgan jarayonni anglatadi, ijtimoiy mahsulotni taqsimlash usuli orqali ishlab chiqarilgan boylik va resurslar turli guruhlar va sektorlar o‘rtasida adolatli va samarali tarzda taqsimlanadi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 108,
+          "qn": "Mehnat jamoasini boshqarishda boshqaruv mehnatining asosiy turlari qaysilar hisoblanadi?",
+          "options": [
+            "evristik, ma’muriy va operatorli",
+            "evristik, tahliliy va konstruktiv",
+            "iqtisodiy, siyosiy, ma’muriy",
+            "xizmatli kommunikatsion, yo‘riqnomaviy, muvofiqlashtiruvchi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 109,
+          "qn": "Mehnatni tashkil etishda tahliliy operatsiyalar deganda nima tushuniladi?",
+          "options": [
+            "qarorlar qabul qilish uchun zaruriy axborotlarni qabul qilish va idrok etish",
+            "qarorlarning mazmuni, xarakteri va murakkabligi",
+            "qarorlarni ijrochilarga og‘zaki farmoyishlar, yozma bo‘yruqlar, ko‘rsatmalar berish yo‘li bilan yetkazish",
+            "ijrochilarga vazifalarni belgilash yoki ular tomonidan tuzilgan ishning shaxsiy rejalarni tasdiqlash, vazifalar va topshiriqlarni bajarish jarayonidan og‘zaki yo‘l-yo‘riqlar ko‘rsatish"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 110,
+          "qn": "Ma’muriy mehnat tushunchasi nimani anglatadi?",
+          "options": [
+            "bu aqliy mehnatning o‘ziga xos turi bo‘lib, uning vazifaviy belgilanishi odamlar harakati va hulqini ularning mehnat faoliyatlari jarayonida bevosita boshqarishdan iborat bo‘ladi",
+            "kompaniyada kishilarni mehnatga jalb etish, mehnatning ijtimoiy taqsimoti, ijtimoiy mahsulotni taqsimlash usuli va ishchi kuchini tiklash xususiyatlari",
+            "kishilarni mehnatga jalb etishda qayta muvofiqlashtirish o‘tkazish jarayoni",
+            "ijtimoiy mahsulotni taqsimlash usuli ishlab chiqarilgan boylik va resurslarni jamiyatdagi turli guruhlar, sohalar yoki korxonalarga qanday taqsimlashni o‘rganadi. Bu jarayon adolatli va samarali taqsimlashni ta’minlash, iqtisodiy barqarorlikni saqlash va ijtimoiy farovonlikni oshirishga xizmat qiladi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 111,
+          "qn": "Ma’muriy mehnat jarayoni qanday tashkiliy – ma’muriy operatsiyalarni bajarishda vujudga keladi?",
+          "options": [
+            "xizmatli kommunikatsion, yo‘riqnomaviy, muvofiqlashtiruvchi, nazoratli- baholovchi",
+            "tahliliy va konstruktiv",
+            "psixofiziologik, ma’muriy, ijtimoiy, muvofiqlashtiruvchi, nazoratli- baholovchi, strategik, taktik va opertaiv",
+            "strategik, taktik va opertaiv"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 112,
+          "qn": "Tashkil qilish funksiyasining asosiy maqsadi - bu:",
+          "options": [
+            "boshqaruv obyekti ichida boshqaruvchi va boshqariluvchi jarayonlarni tartibli amalga oshirishni ta’minlash",
+            "korxona yoki tashkilotning boshqaruv tizimini yanada samarali, moslashuvchan va maqsadga yo‘naltirilgan qilish jarayonidir",
+            "tashkilot strukturasini tanlash",
+            "tashkilotning maqsadlarini belgilash"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 113,
+          "qn": "Rejalashtirish – bu:",
+          "options": [
+            "rahbariyat harakatlarining yagona yo‘nalishini va har bir funksional bo‘g‘inning joyini belgilash vositasi",
+            "korxona yoki tashkilotning rahbarlik va bo‘g‘inlar tizimini tartibga solish, vakolat va mas’uliyatni aniq taqsimlash, hamda qaror qabul qilish jarayonlarini samarali yo‘lga qo‘yish jarayonidir",
+            "kishilarni ish faoliyatga qiziqtirish",
+            "bu har bir hodimning ish joyini belgilash"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 114,
+          "qn": "SWOT tahlilidagi S harfi nimani anglatadi?",
+          "options": [
+            "loyiha yoki jamoaning sanoatdagi boshqalardan ustunlik beruvchi xususiyatlari",
+            "imkoniyatlar (maqsadga erishish uchun qo'shimcha imkoniyatlarni ta'minlaydigan tashqi ehtimoliy omillar)",
+            "zaifliklar (loyihani zaiflashtiradigan xususiyatlar)",
+            "tahdidlar (maqsadga erishishni qiyinlashtirishi mumkin bo'lgan tashqi ehtimoliy omillar)"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 115,
+          "qn": "Mehnat faoliyatini tashkiliy ta’minlash tamoyillaridan ilmiylik tamoyili mohiyati nimadan iborat?",
+          "options": [
+            "xodimlar faoliyatini tashkil etishda fanning so‘nggi yutuqlaridan foydalanish",
+            "xodimlar faoliyatini tashkil etishni nazorat qilish",
+            "xodimlar faoliyatini tashkil etish texnikaviy taraqqiyotga ergashishi va ishlab chiqarishning o‘zgaruvchan sharoitlarga mos kelishi lozim",
+            "xodimlar faoliyatini tashkil etish ishlari ularning ayrim tomonlarini tartibga soladigan muayyan me’yoriy negiz asosida amalga oshirilishi kerak"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 116,
+          "qn": "Mehnat faoliyatini tashkiliy ta’minlash tamoyillaridan uzluksizlik tamoyili mohiyati nimadan iborat?",
+          "options": [
+            "xodimlar faoliyatini tashkil etish texnikaviy taraqqiyotga ergashishi va ishlab chiqarishning o‘zgaruvchan sharoitlarga mos kelishi lozim",
+            "xodimlar faoliyatini tashkil etishni uning barcha yo‘nalishlari bo‘yicha takomillashtirish",
+            "xodimlar faoliyatini tashkil etish ishlari ularning ayrim tomonlarini tartibga soladigan muayyan me’yoriy negiz asosida amalga oshirilishi kerak",
+            "xodimlar faoliyatini tashkil etishda fanning so‘nggi yutuqlaridan foydalanish"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 117,
+          "qn": "Ijtimoiy mehnat taqsimotining qanday shakllari mavjud?",
+          "options": [
+            "Umumiy, xususiy, yagona (qisman)",
+            "yakka, soatbay, ishbay",
+            "soatbay, ishbay",
+            "yollanma va doimiy, soatbay, ishbay"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 118,
+          "qn": "Korxonalarda mehnat taqsimotining qanday ko’rinishlari mavjud?",
+          "options": [
+            "kasb-malaka taqsimoti, bosqichli mehnat taqsimoti, operatsion mehnat taqsimoti, funksional mehnat taqsimoti",
+            "ierarxik mehnat taqsimoti, operatsion mehnat taqsimoti, funksional mehnat taqsimoti, kasb-malaka taqsimoti, strukturali mehnat taqsimoti",
+            "kasb-malaka taqsimoti, strukturali mehnat taqsimoti",
+            "operatsion mehnat taqsimoti, funksional mehnat taqsimoti"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 119,
+          "qn": "Mehnat jamoalarini boshqarish deganda nima tushuniladi?",
+          "options": [
+            "korxonada band bo‘lgan kishilar salohiyatini rivojlantirish va undan samarali foydalanish, ularning normal (mo‘tadil) faoliyat ko‘rsatishi uchun zaruriy shart-sharoit yaratish bo‘yicha o‘zaro bog‘langan tashkiliy-iqtisodiy va ijtimoiy tadbirlar tizimi tushuniladi",
+            "hodimlarni rag’batlantirish tushuniladi.",
+            "rahbarlar xodimlarni ishga qabul qilish, ularning vazifalarini belgilash, motivatsiya va nazoratni ta’minlash orqali kadrlar faoliyatini boshqaradi. Kadrlar bo‘limi esa ishga qabul qilish, malaka oshirish, ish haqi va mehnat shartnomalarini yuritish, xodimlarning yutuq va kamchiliklarini qayd etish kabi masalalarni tizimli ravishda amalga oshiradi",
+            "band bo‘lgan insonlarni nazorat qilish"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 120,
+          "qn": "Mehnat resurslarini boshqarishning asosiy maqsadi?",
+          "options": [
+            "ishchilar va xodimlarning qobiliyatlarini, yanada jadal va unumli mehnat qilishga qo‘zg‘atishdir",
+            "ishchilar va xodimlarni nazorat qilish va muvofiqlashtirish, boshqaruvchilar mehnatini samarali tashkil etish",
+            "boshqaruvchilar mehnatini samarali tashkil etish",
+            "operativ va taktik qarorlar ishlab chiqish"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 121,
+          "qn": "Mehnat taqsimoti belgisi bo‘yicha ish o‘rinlarining qanday turlari mavjud?",
+          "options": [
+            "yakka tartibdagi ish o‘rinlari va jamoa ish o‘rinlari",
+            "maxsus va oddiy ish o‘rinlari",
+            "umumiy, maxsus va alohida ish o‘rinlari, maxsus va oddiy ish o‘rinlari",
+            "tizimli va konveyer ish o‘rinlari"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 122,
+          "qn": "Stress bu –?",
+          "options": [
+            "inglizcha so’zdan olingan bo’lib, asabiylik, keskinlik degan ma’noni anglatadi",
+            "ishchi xodimlarni rivojlantirish bo’yicha tadbirlari majmui",
+            "bu ishlash, boshqarishdagi o’ziga xos yo’l, usul ma’nosini anglatadi",
+            "lotincha so’z bo’lib, narsalar tarkibiy qismlarining o’zaro bog’liq ravishda joylashishi, tuzilishini bildiradi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 123,
+          "qn": "Stereotip qarorlar qanday qarorlar?",
+          "options": [
+            "odatda qat’iy yo‘riqnomalar, me’yoriy hujjatlar doirasida qabul qilinadi va bunday qarorlar ba’zan kundalik, ba’zan masalalar bo‘yicha qabul qilinadi, lekin o‘zgarishlar asosan muddatlarga, ayrim sifat parametrlariga, ijrochilarga taalluqli bo‘ladi",
+            "o‘z tavsifiga ko‘ra notovarlik mazmuniga ko‘ra esa istiqbolni nazarda tutadigan qarorlardir",
+            "standart, rutinniy yoki qayta-qayta yuz beradigan vaziyatlarda rahbarlar yoki xodimlar tomonidan qabul qilinadigan qarorlarni anglatadi. Bunday qarorlar oldindan belgilangan qoidalar, me’yorlar va tartiblarga asoslanadi, shuning uchun ularni qabul qilish tez va samarali amalga oshiriladi.",
+            "tor doiradagi muammoga taalluqli bo‘lib, korxonaning muayyan bir bo‘limi yoki bir guruh xodimlari yuzasidan qabul qilinadi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 124,
+          "qn": "Tashabbusli qarorlar qanday qarorlar?",
+          "options": [
+            "o‘z tavsifiga ko‘ra novatorlik, mazmuniga ko‘ra esa istiqbolni nazarda tutadigan qarorlardir. Bunday qarorlar vaziyatni sinchkovlik bilan batafsil o‘rganishni, maxsus kuzatuv materiallariga asoslanishni, maxsus hisob-kitoblarning amalga oshirilishini talab qiladi",
+            "bu odatiy vaziyatlarda qabul qilinadigan qaror bo’lib, ularning amal qilish doirasi oldindan ma’lumdir.",
+            "tor doiradagi muammoga taalluqli bo‘lib, korxonaning muayyan bir bo‘limi yoki bir guruh xodimlari yuzasidan qabul qilinadi.",
+            "odatda qat’iy yo‘riqnomalar, me’yoriy hujjatlar, baxgalteriya balansi asosida qabul qilinadi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 125,
+          "qn": "Amal qilish xususiyatiga ko‘ra boshqaruv qarorlarining tasnifi?",
+          "options": [
+            "vaqtinchalik qarorlar, operativ (tezkor) qarorlar,  muntazam qarorlar, vaqti-vaqti bilan qabul qilinadigan qarorlar",
+            "korxona, tashkilot yoki jamiyatning iqtisodiy va ijtimoiy hayotiga ta’sir qiluvchi qarorlardir. Ular moliyaviy resurslar taqsimoti, ishchi kuchini boshqarish, ijtimoiy kafolatlar va ishlab chiqarish samaradorligini oshirish kabi masalalarni o‘z ichiga oladi",
+            "an’anaviy qarorlar,  tavsiyali qarorlar",
+            "aniq qarorlar, noaniq qarorlar"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 126,
+          "qn": "Taktik qarorlar qanday qarorlar?",
+          "options": [
+            "maqsadga erishishning vosita va usullari xususidagi joriy, tezkor qarorlardir",
+            "yuqori boshqaruv organlari tomonidan tub va istiqbolli dasturlarni ishlab chiqish maqsadlarida qabul qilinadi",
+            "bir xil muammoga daxldor bo‘lib, barcha bo‘g‘inlar uchun birdek amal qiladi",
+            "tor doiradagi muammoga taalluqli bo‘lib, korxonaning muayyan bir bo‘limi yoki bir guruh xodimlari yuzasidan qabul qilinadi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 127,
+          "qn": "Strategik qaror qanday qarorlar?",
+          "options": [
+            "maqsadga erishishda muhim ahamiyatga ega va yuqori boshqaruv organlari tomonidan tub va istiqbolli dasturlarni ishlab chiqish maqsadlarida qabul qilinadi",
+            "maqsadga erishishning vosita va usullari xususidagi joriy, tezkor qarorlardir",
+            "bir xil muammoga daxldor bo‘lib, barcha bo‘g‘inlar uchun birdek amal qiladi",
+            "tor doiradagi muammoga taalluqli bo‘lib, korxonaning muayyan bir bo‘limi yoki bir guruh xodimlari yuzasidan qabul qilinadi, maqsadga erishishning vositasi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 128,
+          "qn": "Kollegiallik (ko‘pchilik) tamoyili ma’nosi nimadan iborat?",
+          "options": [
+            "rahbarlik vakolatli shaxslar guruhi (kollegiya) tomonidan amalga oshiriladi, mazkur shaxslarning har biri muayyan faoliyat sohasi uchun shaxsiy javobgar boʻladi",
+            "axborot oqimi tobora kuchayib borgan hollarda qo‘llaniladi",
+            "tor doiradagi muammoga taalluqli bo‘lib, korxonaning muayyan bir bo‘limi yoki bir guruh xodimlari yuzasidan qabul qilinadi, axborot oqimi tobora kuchayib boradi",
+            "bir xil muammoga daxldor bo‘lib, barcha bo‘g‘inlar uchun birdek amal qiladi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 129,
+          "qn": "Konsensus tamoyili nima?",
+          "options": [
+            "pur fikrlilik, ya’ni fikrlar plyuralizmi kuchaygan hamda axborot oqimi tobora kuchayib borgan hollarda qo‘llaniladi",
+            "turli ittifoq yoki birlashmalar ro‘yirost ma’lum bo‘lib turgan   vaziyatlarda, har xil fikrlar raqobat qiladigan hollarda amal qiladi.",
+            "tor doiradagi muammoga taalluqli bo‘lib, korxonaning muayyan bir bo‘limi yoki bir guruh xodimlari yuzasidan qabul qilinadi.",
+            "bir xil muammoga daxldor bo‘lib, barcha bo‘g‘inlar uchun birdek amal qiladi."
+          ],
+          "answer": 1
+        },
+        {
+          "id": 130,
+          "qn": "Mahsulot sifatini boshqarish tushunchasi",
+          "options": [
+            "iste’molchilar talablariga mos keluvchi sifat tasniflari bilan ishlab chiqarishni boshqarish",
+            "iqtisodiy va ijtimoiy omillar",
+            "strategiya va struktura",
+            "boshqaruv tartib qoidasi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 131,
+          "qn": "Korxona quvvati deganda nima tushuniladi?",
+          "options": [
+            "dastgoh va ishlab chiqarish maydonlaridan ilg‘or texnologiya, ishlab chiqarish va mehnatni tashkil etishning  ilg‘or usullaridan to‘liq foydalangan sharoitda yiliga korxonaning eng ko‘p mahsulot ishlab chiqarish yoki xom ashyoni qayta ishlash imkoniyatiga aytiladi.",
+            "maqsadga erishishning vosita va usullari",
+            "bir xil muammoga daxldor bo‘lib, barcha bo‘g‘inlar uchun birdek eng ko‘p mahsulot ishlab chiqarish yoki xom ashyoni qayta ishlash imkoniyatiga aytiladi, tor doiradagi muammoga taalluqli bo‘lib, korxonaning muayyan bir bo‘limi yoki bir guruh eng ko‘p mahsulot ishlab chiqarish",
+            "tor doiradagi muammoga taalluqli bo‘lib, korxonaning muayyan bir bo‘limi yoki bir guruh eng ko‘p mahsulot ishlab chiqarish yoki xom ashyoni qayta ishlash imkoniyatiga aytiladi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 132,
+          "qn": "Korxona qudratini belgilovchi omillar deb qaysilar nazarda tutiladi?",
+          "options": [
+            "mahsulot sifati, korxona imidji, raqobatbardoshlik, hamkorlar bilan aloqadagi mavqening yuqoriligi, innovatsion texnologiya va texnika bilan  ta’minlanganlik darajasi",
+            "korxona balansi",
+            "mahsulot sifati, korxona imiji, raqobatbardoshlik darajasi, hamkorlar bilan aloqalardagi mavqe, shuningdek, innovatsion texnologiya va texnika bilan ta’minlanganlik darajasi, mahsulot sifati, korxona imidji",
+            "reklama"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 133,
+          "qn": "Yalpi foyda nimani ifodalaydi?",
+          "options": [
+            "korxona yalpi daromadining barcha majburiy to‘lovlarni chiqarib tashlagandan so‘ng korxona ixtiyorida qoluvchi qismi",
+            "korxona faoliyatining yakuniy natijalarini tavsiflaydi",
+            "yalpi pul tushumi va mahsulot ishlab chiqarish va sotishga sarflanuvchi barcha harajatlar o‘rtasidagi balansni ifodalaydi, korxona faoliyati",
+            "mahsulot ishlab chiqarish va sotishga sarflanuvchi barcha harajatlar o‘rtasidagi salbiy zararni ifodalaydi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 134,
+          "qn": "Boshqaruv samaradorligi deganda:",
+          "options": [
+            "erishilgan samaraning sarflangan xarajatga bo‘lgan nisbati tushuniladi",
+            "bozor muvozanati, bozor talabi, bozor taklifi,  yalpi investitsiya tushuniladi",
+            "yalpi ichki mahsulot tushuniladi",
+            "yalpi investitsiya tushuniladi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 135,
+          "qn": "Fond sig‘imi deganda:",
+          "options": [
+            "fond qaytimiga teskari bo‘lgan nisbat. Asosiy ishlab chiqarish fondlari o‘rtacha qiymatining ishlab chiqarilgan mahsulot hajmiga nisbati sifatida hisoblanadi",
+            "o‘z faoliyatini bozor munosabatlari sharoitida amalga oshirish va bunda ishlab chiqarishni ilmiy-texnik jihatdan takomillashtirish, hodimlarni rag‘batlantirish va mahsulot sifatining yuqori bыlishini ta’minlashga yetarli bo‘lgan foyda olish",
+            "erishilgan samaraning sarflangan xarajatga bo‘lgan nisbati tushuniladi",
+            "sarflangan harajatning erishilgan samaraga bo‘lgan nisbati tushuniladi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 136,
+          "qn": "Raqobatbardoshlik deganda nima tushuniladi?",
+          "options": [
+            "shaxs, kompaniya yoki mamlakatning boshqa raqobatchilariga nisbatan bozorda rentabellik qobiliyati ya’ni raqobatchilar bilan olib boriladigan bahs",
+            "fond qaytimiga teskari bo‘lgan nisbat bo’lib asosiy ishlab chiqarish fondlari o‘rtacha qiymatining ishlab chiqarilgan mahsulot hajmiga nisbati sifatida hisoblanadi",
+            "erishilgan samaraning sarflangan xarajatga bo‘lgan nisbati tushuniladi",
+            "sarflangan harajatning erishilgan samaraga bo‘lgan nisbati tushuniladi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 137,
+          "qn": "Uskunalarni  zamonaviylashtirish deganda nima tushuniladi?",
+          "options": [
+            "harakatdagi uskunalar konstruksiyasiga, uning texnik darajasini oshiruvchi hamda texnik va iqtisodiy ko‘rsatkichlarini yaxshilovchi sezilarli o‘zgarishlar kiritish",
+            "nisbatan foydalanish samaradorlikni baholash imkonini beradi: ya’ni, qancha asosiy ishlab chiqarish fondlari (uskunalar, binolar, asbob-uskunalar) bilan ma’lum hajmdagi mahsulot ishlab chiqarilganini ko‘rsatadi",
+            "erishilgan samaraning sarflangan xarajatga bo‘lgan nisbati tushuniladi",
+            "sarflangan harajatning erishilgan samaraga bo‘lgan nisbati tushuniladi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 138,
+          "qn": "Mehnat unumdorligi deganda nima tushunasiz?",
+          "options": [
+            "insonlar ishlab chiqarish faoliyatining samaradorligi ya’ni hodim moddiy ishlab chiqarish sohasida ish vaqti birligida ishlab chiqargan mahsulotlar miqdori yoki mahsulot birligini ishlab chiqarish uchun sarflangan vaqt bilan o‘lchanadi",
+            "Harakatdagi uskunalarga konstruksiyasini takomillashtirish, uning texnik darajasini oshiruvchi hamda texnik va iqtisodiy ko‘rsatkichlarini yaxshilovchi sezilarli o‘zgarishlar kiritish — bu ishlab chiqarish jarayonini modernizatsiya qilish va samaradorligini oshirishga qaratilgan faoliyatdir",
+            "fond qaytimiga teskari bo‘lgan nisbat bo’lib asosiy ishlab chiqarish fondlari o‘rtacha qiymatining ishlab chiqarilgan mahsulot hajmiga nisbati sifatida hisoblanadi",
+            "erishilgan samaraning sarflangan xarajatga bo‘lgan nisbati tushuniladi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 139,
+          "qn": "Umumiy daromad bilan umumiy xarajatlar o‘rtasidagi farq nimani belgilaydi?",
+          "options": [
+            "foydani",
+            "tovarni sotishdan kelib tushgan pul",
+            "korxonaning bank hisobida turgan pul mablag‘lari",
+            "ishlab chiqarish sohasidagi tadbirkorlik faoliyati"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 140,
+          "qn": "Samaradorlik deganda nima tushuniladi?",
+          "options": [
+            "korxona uchun maksimal qiymat yaratish maqsadiga yo‘naltirilgan faoliyat natijasini aks ettiruvchi nisbiy kategoriya",
+            "harakatdagi uskunalar konstruksiyasiga, uning texnik darajasini oshiruvchi hamda texnik va iqtisodiy ko‘rsatkichlarini yaxshilovchi sezilarli o‘zgarishlar kiritish",
+            "fond qaytimiga teskari bo‘lgan nisbat. Asosiy ishlab chiqarish fondlari o‘rtacha qiymatining ishlab chiqarilgan mahsulot hajmiga nisbati sifatida hisoblanadi",
+            "erishilgan samaraning sarflangan xarajatga bo‘lgan nisbati tushuniladi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 141,
+          "qn": "Korxonaning tijorat sirlari",
+          "options": [
+            "korxonaning ishlab chiqarish, texnologiyalar, boshqaruv va boshqa turdagi faoliyati bilan bog‘liq, oshkor qilinishi korxona manfaatlariga zarar yetkazishi mumkin bo‘lgan, davlat sirlariga aloqasi bo‘lmagan ma’lumotlar",
+            "tashkilotning ichki boshqaruv jarayonlarini tartibga soluvchi, qarorlar qabul qilish va ularni amalga oshirishni nazorat qilishga xizmat qiluvchi rasmiy hujjatlar majmuasidir. Ushbu to‘plamga ichki qoidalar, nizomlar, buyruqlar, qarorlar, ish jarayonlari bo‘yicha ko‘rsatmalar va boshqa boshqaruv hujjatlari kiradi",
+            "korxona ustavi va moliyaviy hisobotlari",
+            "korxonaning aksiyadorlar kengashi ro‘yhati"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 142,
+          "qn": "Konversiya nima?",
+          "options": [
+            "korxonaning umuman boshqa turdagi mahsulot ishlab chiqarishga o‘tishi",
+            "korxonaning mahsulot sifatini yaxshilashi",
+            "korxonaning boshqaruv sifatini yaxshilashi, korxonaning mahsulot sifatini yaxshilashi",
+            "korxonaning kadrlar sifatini yaxshilashi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 143,
+          "qn": "Investor bu…",
+          "options": [
+            "biron-bir faoliyatga, korxonaga foyda olish maqsadida uzoq muddatli kapital kiritishni amalaga oshiruvchi xususiy tadbirkor, tashkilot yoki davlat",
+            "korxona egasi",
+            "foyda olishni maqsad qiluvchi shaxs",
+            "faoliyat olib borayotgan xususiy tadbirkor, tashkilot yoki davlat"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 144,
+          "qn": "Konglomerat deganda nima tushunasiz?",
+          "options": [
+            "turli strukturalarni birgalikda qo‘shib olib borilishini anglatadi",
+            "muayyan strukturadan birini tanlashni anglatadi",
+            "qaror qabul qilish usuli hisoblanadi, muayyan strukturadan birini tanlashni anglatadi",
+            "strategiyani amalga oshirish usuli"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 145,
+          "qn": "Aksiya bu…",
+          "options": [
+            "aksiyadorlik jamiyati tomonidan chiqariluvchi hamda uning egasi, aksiyadorlik jamiyatining a’zosiga jamiyatni boshqarish va foydadan dividend olish huquqini beruvchi qimmatbaho qog‘oz",
+            "ushbu hujjat aksiyadorlik jamiyatida egalik, dividend olish huquqi, ovoz berish va boshqaruvdagi ishtirokni kafolatlaydi. Shu bilan birga, u moliyaviy operatsiyalar, investorlar bilan aloqalar va kapital bozoridagi shaffoflikni ta’minlashda muhim vosita hisoblanadi",
+            "qarz majburiyati turidagi hujjat",
+            "muayyan strukturadan birini tanlashni anglatadi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 146,
+          "qn": "Korxonaning raqobatbardoshligi salohiyati standartlari qanday turlarga bo‘linadi?",
+          "options": [
+            "iqtisodiy va sotsial",
+            "umumiy va aniq",
+            "maxsus va oddiy",
+            "uzoq muddatli va joriy"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 147,
+          "qn": "Menejerning korxonadagi mavjud resurslardan muvofiq foydalanish qobiliyati?",
+          "options": [
+            "menejerning tayyorgarligi, ist’edodi va kasbiy moslashganligi, korxona tashkiliy tuzilmasini yaratish va yangilashni bilishi",
+            "korxonaning raqobatbardoshligi, moliya sohasidagi ichki va tashqi qarzdorligi, axborotlardan foydalanish “qo‘shimcha ishlov berish” usuli",
+            "Ishlab chiqarish jarayonini nazorat qilish",
+            "Axborotlardan foydalanish “qo‘shimcha ishlov berish” usuli"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 148,
+          "qn": "Qaysi maktab nazariyasida “Ishchi-bu robot emas, balki obroʻ-e’tiborga, oʻz-oʻzini hurmat qilishga, oʻz qadr qimmatini his eta oladigan individdir” deb ta’rif etilgan?",
+          "options": [
+            "insoniy munosabatlar maktabi",
+            "boshqaruvning klassik maktabi, ijtimoiy tizimlar maktabi",
+            "ijtimoiy tizimlar maktabi",
+            "imperik maktab"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 149,
+          "qn": "Bozor iqtisodiyoti sharoitida O’zbekistonda davlat quyidagi qaysi prinsiplarga asoslanib boshqariladi:",
+          "options": [
+            "demokratiyalash, iqtisodiy munosabatlarni demokratiyalash va milliy xavfsizlikni ta’minlash, yuksak ma’naviyat prinsiplari",
+            "hukumronlik prisipiga",
+            "avtokratiya prinsipiga",
+            "davlatning barcha organlari va rahbarlari qonunlar, konstitutsiya va boshqa normativ hujjatlarga qat’iy rioya qilgan holda faoliyat yuritadi"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 150,
+          "qn": "Oʻz qoʻl ostidagilarni “qoʻrquv bilan umid oʻrtasida ushlash” boʻyicha boshqargan shaxs kim edi?",
+          "options": [
+            "A.Temur",
+            "F.Teylor",
+            "A.Fayol",
+            "D.Makgregor"
+          ],
+          "answer": 1
+        },
+        {
+          "id": 151,
+          "qn": "Rahbar avtoriteti – bu:",
+          "options": [
+            "emotsional-irodaviy ta’sir qobiliyati",
+            "tug‘ma layoqat",
+            "kommunikativ tug‘ma layoqat",
+            "rahbarning qattiqqo‘lligi"
+          ],
+          "answer": 1
+        }
+      ]
     }
   ]
 }
